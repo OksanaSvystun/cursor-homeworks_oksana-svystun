@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Git cheat sheets</title>
+</head>
+<body>
+   <div>
+      <h2>Base hw</h2>
+      <ul>
+         <li>git config --global user.name "Your Name" <em>- задає ім'я глобально (достатньо виконати один раз).</em></li>
+         <li>git config --global user.email your_email <em>- задає емейл глобально (достатньо виконати один раз).</em></li>
+         <li>git init <em>- ініціалізація git-репозиторія.</em></li>
+         <li>git status <em>- відображає стан робочого каталогу (є чи немає що комітити).</em></li>
+         <li>git add <em>- добавляє файли робочого каталогу в буфер для подальшого коміту.</em></li>
+         <li>git commit <em>- добавляє вміст буфера в репозиторій.</em></li>
+         <li>git log <em>- відображає усі коміти.</em></li>
+         <li>git checkout <em>- перехід на іншу гілку.</em></li>
+         <li>git branch <em>- перегляд наявних гілок, або створення нової.</em></li>
+         <li>git push <em>- відправлення файлів на віддалений репозиторій.</em></li>
+         <li>git pull <em>- завантажує зміни з віддаленого репозиторію в локальний каталог.</em></li>
+         <li>git merge <em>- злиття двох гілок.</em></li>
+         <li>git clone <em>- створення клону віддаленого репозиторію.</em></li>
+      </ul>
+      <h3>Що таке .gitignore</h3>
+      <p>Файл .gitignore потрібен для приховування файлів і папок від системи контролю версій Git. </p>
+   </div>
+   
+
+   <div>
+      <h2>Advanced hw</h2>
+      <ul>
+         <li>git revert <em>- створюється новий коміт, який відміняє останній коміт. Обидва коміти надалі існують в історії комітів.</em></li>
+         <li>git reset <em>- відміняє останній коміт, при цьому стирає його з історії.</em></li>
+         <li>git rebase <em>- перебазовує робочоу гілку на іншу гілку, тобто змінює основу робочої гілки.</em></li>
+         <li>git cherry-pick <em>- переносить певний коміт з одного місця в репозиторії в інше.</em></li>
+         <li>git stash <em>- зберігає зміни внесені до файлу в окремому сховищі на локальному репозиторії і робить відкат до початкової робочої версії файлу.</em></li>
+      </ul>
+
+      <h3>Підключити github через SSH </h3>
+      <img src="ssh.jpg" alt="Скрін Git Bash">
+   </div>
+   
+</body>
+</html>
