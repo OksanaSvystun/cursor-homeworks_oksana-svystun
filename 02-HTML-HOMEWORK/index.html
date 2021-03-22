@@ -19,6 +19,8 @@
     <h1>Домашнє завдання. Заняття №3. Тема – HTML</h1>
   </header>
   <main>
+
+    <!-- Table with data -->
     <table>
       <tr>
         <th>Firstname</th>
@@ -51,7 +53,10 @@
         <td>nekitsu@gmail.com</td>
       </tr>
     </table>
+    <!-- ./Table with data -->
+    <!-- Form -->
     <form>
+      <!-- Text inputs -->
       <label for="">Enter your first name:</label>
       <br>
       <input type="text" placeholder="First name">
@@ -61,6 +66,8 @@
       <input type="text" placeholder="Last name">
       <br><br>
 
+
+      <!-- Radio inputs -->
       <label for="">Choose your gender:</label><br>
       <input type="radio" id="male" name="gender" value="male" checked>
       <label for="">Male</label><br>
@@ -70,9 +77,13 @@
       <label for="">Other</label>
       <br><br>
 
+
+      <!-- Text area -->
       <textarea name="question" placeholder="Ask a question" cols="25" rows="6"></textarea>
       <br><br>
 
+
+      <!-- Select tag (almost dropdown menu) -->
       <label>Your city:</label><br>
       <select name="cities">
         <option value disabled selected>Choose your city</option>
@@ -83,18 +94,22 @@
       </select>
       <br><br>
 
+
+      <!-- Checkbox inputs -->
       <label for="language">Choose language:</label><br>
       <input type="checkbox" name="vehicle1">
       <label for="vehicle1"> English</label><br>
       <input type="checkbox" name="vehicle2">
       <label for="vehicle2"> Ukrainian</label><br>
       <input type="checkbox" name="vehicle3">
-      <label for="vehicle3"> Russian</label><br><br>
-      
+      <label for="vehicle3"> Russian</label>
+      <br><br>
+
+      <!-- Submit input -->
       <input type="submit" value="Submit">
 
     </form>
-
+    <!-- ./Form -->
   </main>
 
 
