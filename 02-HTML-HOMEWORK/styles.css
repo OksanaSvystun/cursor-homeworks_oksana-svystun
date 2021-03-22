@@ -11,6 +11,7 @@ header h1{
    padding: 10px;
    text-align: center;
 }
+
 table{
    width: 600px;
    margin-left: 30%;
@@ -28,3 +29,8 @@ td:first-child{
    border-radius: 3px 0 0 3px;
 }
 
+form{
+   margin-left: 30%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
