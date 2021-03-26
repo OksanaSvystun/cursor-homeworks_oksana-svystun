@@ -1,65 +1,204 @@
-body{
+body {
    background-color: rgb(36, 34, 34);
-   color: #fff;
-   font-family: Tahoma, sans-serif;
+   color: rgb(219, 219, 219);
+   font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
-.border{
+
+.border {
    border: 1px solid #555;
    border-radius: 4px;
-   width: 40em;
+   width: 640px;
    margin: 1.5em;
    background-color: rgba(61, 61, 61, 0.2);
+   font-size: small;
 }
-table{
+
+table {
    width: 100%;
    text-align: left;
    border-collapse: collapse;
 }
-th:first-child{
+
+th:first-child {
    width: 50%;
 }
-th:last-child{
+
+th:last-child {
    padding: 0;
    padding-right: 3px;
 }
-th{
+
+th {
    padding: 10px 5px;
 }
-td{
+
+td {
    border-top: 1px solid #555;
    width: 25%;
 }
-td:last-child{
+
+td:last-child {
    text-align: right;
 }
-td:nth-child(2n+1), 
-th:first-child{
+td:nth-child(2n){
+   color: #888;
+}
+
+td:nth-child(2n+1),
+th:first-child {
    padding: 8px 15px;
 }
 
-.input-group{
+
+
+.container {
+   display: block;
+   position: relative;
+   padding-left: 35px;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 12px;
+   width: 12px;
+   background-color: #333;
+   border-radius: 2px;
+   border: 1px solid #555;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+   border-radius: 2px;
+   border: 1px solid #888;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+   background-color: #0380fc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+   display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+   left: 4px;
+   top: -1px;
+   width: 3px;
+   height: 8px;
+   border: solid white;
+   border-width: 0 2px 2px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+.container-n{
+   display: block;
+   position: relative;
+   padding-left: 35px;
+}
+.checkmark-n{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 12px;
+   width: 12px;
+   background-color: #0380fc;
+   border-radius: 2px;
+   border: 1px solid #555;
+}
+.checkmark-n:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+.container-n .checkmark-n:after {
+   display: block;
+   left: 3px;
+   top: 5.5px;
+   width: 5px;
+   border: solid white;
+   border-width: 0 2px 2px 0;
+}
+
+
+.input-group {
    background-color: rgba(70, 70, 70, 0.6);
    border-radius: 3px;
    height: 30px;
    display: flex;
    align-items: center;
 }
+.input-group:hover{
+   background-color: #333;
+}
+
 .search-btn,
 .search-input {
    background: none;
    border: none;
 }
-.search-btn{
+
+.search-btn {
    cursor: pointer;
 }
-.search-input{
+
+.search-input {
    width: 60%;
    color: #fff;
 }
-.search-input:focus{
- outline: none;
+
+.search-input:focus {
+   outline: none;
 }
-.icon{
+
+.search {
    width: 12px;
    height: 12px;
+}
+
+.file {
+   width: 15px;
+   height: 15px;
+   margin-right: 15px;
+}
+
+.arrow {
+   width: 10px;
+   height: 10px;
+   margin-left: 5px;
+}
+
+.dots::after{
+    content: '•••';
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: rgb(209, 209, 209);
 }
