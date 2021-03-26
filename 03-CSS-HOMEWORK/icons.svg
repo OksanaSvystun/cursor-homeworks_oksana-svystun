@@ -3,4 +3,12 @@
    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" id="search">
     <path d="M15.677 16.607l-5.715-5.716a6 6 0 01-7.719-9.133 6 6 0 019.134 7.718l5.715 5.716-1.414 1.414-.001.001zM6.485 2a4 4 0 102.917 1.264l.605.6-.682-.68-.012-.012A3.972 3.972 0 006.485 2z" fill="rgba(200, 200, 200, 0.8)"></path>
   </symbol>
+
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" id="file">
+    <path d="M16 17H1a.984.984 0 01-.993-1H0V2a2 2 0 012-2h6a1 1 0 01.616.213L10.9 2H16a2 2 0 012 2v4h1a1 1 0 01.919 1.394l-3 7A1 1 0 0116 17zM4.66 10l-2.143 5h12.824l2.143-5H4.66zM2 4v7.13l1.081-2.524A1 1 0 014 8h12V4H2z" fill="#0380fc"></path>
+  </symbol>
+
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6" id="arrow">
+    <path d="M5 5.5l5-5H0l5 5z" fill="#EEEEEE"></path>
+  </symbol>
 </svg>
