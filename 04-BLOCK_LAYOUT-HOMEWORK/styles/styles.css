@@ -23,16 +23,16 @@ body {
 }
 
 .text-information {
-   width: 445px;
+   width: 480px;
    color: #fff;
-   margin-right: 18%;
+   margin-right: 16%;
 }
 
 .text-information h2 {
    margin: 0;
    font-weight: 700;
    font-size: 2.5em;
-   margin-bottom: 24px;
+   margin-bottom: 40px;
 }
 
 .text-information p {
@@ -50,7 +50,8 @@ body {
    margin-right: 25px;
 }
 .img-information img{
-   width: 38em;
+   width: 533px;
+   cursor: pointer;
 }
 
 .contacts-sectoin{
