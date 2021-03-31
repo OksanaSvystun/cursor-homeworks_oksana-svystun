@@ -22,7 +22,9 @@ body {
    justify-content: center;
    width: 80em;
 }
-
+.main-info{
+   width: 70em;
+}
 .text-information {
    width: 50em;
    color: #fff;
