@@ -8,69 +8,81 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
+   padding: 6em 0;
 }
 
 .info-section {
    background-color: #ED4C5C;
-   padding: 95px 0;
+   /* padding: 6em 0; */
 }
 
 .info-container {
    display: flex;
    align-items: center;
-   justify-content: flex-start;
-   width: 70%;
+   justify-content: center;
+   width: 80em;
 }
 
 .text-information {
-   width: 480px;
+   width: 50em;
    color: #fff;
-   margin-right: 16%;
+   margin-right: 10em;
+   max-width: 30em;
 }
 
 .text-information h2 {
    margin: 0;
    font-weight: 700;
    font-size: 2.5em;
-   margin-bottom: 40px;
 }
 
 .text-information p {
    line-height: 1.35em;
    text-align: justify;
+   margin: 3em 0;
 }
 
-.icons-div {
+/* .icons-div {
    margin-top: 40px;
-}
+} */
 
 .icon {
    width: 2em;
    height: 2em;
-   margin-right: 25px;
+   margin-right: 2em;
+}
+.img-information{
+   width: 50em;
+   max-width: 35em;
 }
 .img-information img{
-   width: 533px;
+   width: 100%;
    cursor: pointer;
 }
 
-.contacts-sectoin{
-   padding: 117px 0 123px;
-}
+/* .contacts-sectoin{
+   padding: 6em 0;
+} */
 .contacts-container {
    align-items: start;
+   justify-content: end;
 }
 
 .contacts-text {
    color: #000;
-   margin-right: 20%;
+   /* margin-right: 20%; */
 }
 
 .form-information {
-   display: flex;
+   /* display: flex;
    flex-direction: column;
    justify-content: start;
-   width: 540px;
+   width: 540px; */
+    width: 50em;
+    max-width: 35em;
+}
+.form-container{
+   width: 100%;
 }
 
 .info-input {
@@ -79,7 +91,7 @@ body {
    border-radius: 6px;
    color: rgba(19, 39, 67, 0.5);
    /* width: 100%; */
-   padding-left: 31px;
+   padding-left: 2em;
 }
 .info-input:focus{
    color: #000;
@@ -91,12 +103,15 @@ body {
 }
 
 .name-input {
-   width: 42%;
+   width: 14.5em;
 }
 
 .phone-input {
    margin: 24px 0;
    /* width: 507px; */
+}
+.phone-info{
+   width: calc(100% - 2.1em);
 }
 
 .submit-bottom {
@@ -112,25 +127,26 @@ body {
 
 footer {
    background-color: #FAFAFA;
-   padding: 85px 0;
+   /* padding: 85px 0; */
 }
 
 .footer-container {
-   width: 70%;
+   /* width: 70%; */
+   flex-direction: column;
 }
 
 .footer-info {
    width: 100%;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    margin-bottom: 86px;
    font-size: 0.85em;
    line-height: 1.28em;
 }
 
-.footer-info>* {
+/* .footer-info>* {
    width: 254px;
-}
+} */
 
 .footer-info h3 {
    font-weight: 700;
@@ -161,7 +177,9 @@ a {
 .support-info img {
    width: 15.4em;
 }
-
+.footer-copyright{
+   width: 88%;
+}
 
 
 
