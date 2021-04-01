@@ -197,7 +197,7 @@ a {
    width: 100%;
    padding-left: 2em;
 
-   background: url(/images/arrow.svg) no-repeat right;
+   background: url(../images/arrow.svg) no-repeat right;
    background-position-x: 98%;
    background-size: 1em;
    padding-left: 31px;
