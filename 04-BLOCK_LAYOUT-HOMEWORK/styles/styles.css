@@ -106,14 +106,15 @@ body {
 
 .name-input {
    width: 14.5em;
+   outline: none;
 }
 
 .phone-input {
    margin: 24px 0;
-   /* width: 507px; */
 }
 .phone-info{
    width: calc(100% - 2.1em);
+   outline: none;
 }
 
 .submit-bottom {
