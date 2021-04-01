@@ -29,6 +29,10 @@ p{
    display: flex;
    justify-content: space-between;
 }
+.logo{
+   width: 2.5em;
+   height: 2em;
+}
 .navbar-info .logo{
    flex-grow: 2;
 }
@@ -89,7 +93,7 @@ p{
 .info{
    width: calc(100% + 10%);
    height: 30em;
-   background: url(/images/image1.png) no-repeat right bottom;
+   background: url(../images/image1.png) no-repeat right bottom;
    background-size: 70%;
 }
 .info-text {
