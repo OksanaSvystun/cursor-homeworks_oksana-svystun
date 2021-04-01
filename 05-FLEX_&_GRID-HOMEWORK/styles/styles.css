@@ -1,0 +1,148 @@
+body{
+   box-sizing: border-box;
+   color: #212353;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1em;
+}
+p{
+   color: #4B5D68;
+   line-height: 1.8em;
+}
+.container {
+   width: 100%;
+   background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+   display: flex;
+   justify-content: center;
+}
+.content {
+   width: 70%;
+}
+
+.navbar{
+   margin: 2em 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.navbar-info{
+   width: 50%;
+   display: flex;
+   justify-content: space-between;
+}
+.navbar-info .logo{
+   flex-grow: 2;
+}
+.nav-links{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-grow: 4;
+}
+.nav-link{
+   text-decoration: none;
+   color: #4B5D68;
+   font-weight: 500;
+   /* color: #212353; */
+}
+.nav-link.active{
+   font-weight: 600;
+   color: #212353;
+}
+.nav-link:hover{
+   font-weight: 600;
+   color: #212353;
+}
+.btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 600;
+   border: none;
+   border-radius: 50px;
+   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+   color: #212353;
+   line-height: 1.5em;
+}
+.demo-btn{
+   background-color: #FFFFFF;
+   color: #212353;
+   padding: 17px 29px;   
+}
+.demo-btn span{
+   display: block;
+}
+.arrow-right{
+   width: 20px;
+   height: 14px;
+   margin-left: 20px;
+}
+
+/* End Nav-Bar Styles */
+
+/* Start Main Styles */
+.main {
+   width: 100%;
+   margin-top: 10em;
+   margin-bottom: 10em;
+}
+
+.info{
+   width: calc(100% + 10%);
+   height: 30em;
+   background: url(/images/image1.png) no-repeat right bottom;
+   background-size: 70%;
+}
+.info-text {
+   width: 50%;
+   /* top: -10%; */
+}
+.info-text h1{
+   font-size: 3.5em;
+}
+.info-text p{
+   width: 65%;
+   margin-bottom: 3em;
+}
+.learn-btn{
+   background-color: #9C69E2;
+   color: #FFFFFF;
+   padding: 16px 37px;
+}
+.about{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: rgba(240, 99, 184, 0.15);
+   border-radius: 50px;
+   margin-top: 100px;
+   margin-bottom: 130px;
+       
+}
+.about-img-container{
+   width: 50%;
+}
+.about-img{
+   width: 100%;
+}
+.about-text-container{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.about-text-container h2{
+   width: 80%;
+   font-size: 2em;
+}
+.about-text-container p{
+   width: 80%;
+}
+
+
+
+
+
+
+
+
