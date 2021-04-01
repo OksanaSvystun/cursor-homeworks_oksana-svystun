@@ -196,10 +196,10 @@ select::-ms-expand {
    display: none;
 }
 
-.selectdiv:after {
+/* .selectdiv:after {
    content: '>';
    font: 17px "Consolas", monospace;
-   color: #333;
+   color: rgba(19, 39, 67, 0.5);;
    -webkit-transform: rotate(90deg);
    -moz-transform: rotate(90deg);
    -ms-transform: rotate(90deg);
@@ -209,9 +209,25 @@ select::-ms-expand {
    top: 18px;
    padding: 0 0 2px;
 
+
+   border-right: 2px solid;
+   content: '';
+   display: block;
+   height: 8px;
+   margin-top: -6px;
+   position: absolute;
+   -moz-transform: rotate(135deg);
+   -o-transform: rotate(135deg);
+   -webkit-transform: rotate(135deg);
+   transform: rotate(135deg);
+   right: 30px;
+   top: 50%;
+   width: 0;
+
    position: absolute;
    pointer-events: none;
-}
+} */
+
 
 .selectdiv select {
    -webkit-appearance: none;
@@ -224,8 +240,12 @@ select::-ms-expand {
    border: none;
    -ms-word-break: normal;
    word-break: normal;
-   border: 1px solid #333333;
+   border: 1px solid #333;
    border-radius: 6px;
    color: rgba(19, 39, 67, 0.5);
    padding-left: 31px;
+padding-right: 31px;
+   background: url(/images/arrow.svg) no-repeat right;
+   background-position-x: 95%;
+   background-size: 0.9em;
 }
