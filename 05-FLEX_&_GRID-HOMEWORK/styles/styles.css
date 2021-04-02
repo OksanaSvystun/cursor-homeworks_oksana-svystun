@@ -81,6 +81,10 @@ h3{
    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
    color: #212353;
    line-height: 1.5em;
+   cursor: pointer;
+}
+.btn:hover{
+   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.5);
 }
 
 .demo-btn {
@@ -354,9 +358,6 @@ justify-content: space-between;
    margin-bottom: 9em;
    flex-wrap: wrap;
 }
-/* .footer-main-text h3{
-   font-size: 2em;
-} */
 .footer-btns{
    display: flex;
    flex-wrap: wrap;
