@@ -13,6 +13,11 @@ p {
 h3{
    font-size: 2em;
 }
+a:enabled, 
+a:checked, 
+button:enabled{
+   outline: none;
+}
 .container {
    width: 100%;
    background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
