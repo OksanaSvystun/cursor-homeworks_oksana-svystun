@@ -258,6 +258,10 @@ button:enabled{
    font-weight: 700;
    font-size: 1em;
 }
+.features-link:hover{
+   color:#9C69E2;
+   letter-spacing: 1px;
+}
 .features-link .icon{
    margin-left: 10px;
 }
@@ -325,6 +329,8 @@ justify-content: space-between;
 }
 .arrows{
    display: flex;
+   justify-content: space-around;
+   width: 100px;
 }
 .arrow, .dot{
  cursor: pointer;
@@ -333,9 +339,16 @@ justify-content: space-between;
 .arrow-left{
    width: 2em;
    height: 1em;
+   stroke: #FFFFFF;
 }
-.arrow-right{
+.arrow-right2{
    height: 1em;
+   width: 20px;
+   stroke: #fff;
+}
+.arrow-left:hover,
+.arrow-right2:hover{
+   stroke: #f78fe0;
 }
 
 /* End main */
@@ -411,6 +424,29 @@ address p{
    flex-direction: column;
    margin-top: 3em;
 }
+.footer-links a:hover{
+   color: #ce67b7;
+}
+.facebook,
+.twitter,
+.instagram {
+   fill: #212353;
+   opacity: .1;
+}
+.facebook:hover{
+   fill: #4267B2;
+   opacity: 1;
+}
+.twitter:hover{
+   fill: #1DA1F2;
+   opacity: 1;
+}
+.instagram:hover{
+   fill: url(#linear-gradient);
+   opacity: 1;
+}
+
+
 .footer-copyright{
    display: flex;
    align-items: center;
@@ -425,4 +461,8 @@ address p{
    height: 3.8em;
    margin: 0;
 }
+.message:hover{
+   opacity: .6;
+}
+
 
