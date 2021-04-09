@@ -1,0 +1,85 @@
+body{
+   min-width: 1100px;
+   min-height: 600px;
+}
+h1, h2, h3, h4, h5, h6{
+   font-family: 'Baloo Bhai 2', cursive;
+}
+
+.wrapper{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 100%;
+   margin: 5vh 5.5% 1.6% 2.2%;
+}
+
+
+.aside{
+   width: 9%;
+   height: 95vh;
+   max-width: 132px;
+   max-height: 852px;
+   background-color: #000;
+   border-radius: 24px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.nav{
+   width: 50%;
+   height: 90%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   justify-content: space-between;
+}
+.logo{
+   color: #fff;
+   font-family: 'Baloo Bhai 2', cursive;
+   font-size: 64px;
+   font-weight: 700;
+}
+.navigation{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 50%;
+   margin-bottom: auto;
+   margin-top: 20%;
+   margin-bottom: 20vh;
+}
+.nav-icon{
+   width: 26px;
+   height: 26px;
+   fill: #fff;
+}
+.nav-icon:hover{
+   fill: #F45B5B;
+}
+.navigation-exit-link .nav-icon:hover{
+   width: 30px;
+   height: 30px;
+   fill: red;
+}
+
+.main{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 84%;
+   height: 100%;
+}
+.main-content{
+   height: 100%;
+   background-color: blueviolet;
+   width: 55%;
+}
+.info-content{
+    height: 100%;
+    background-color: aquamarine;
+    width: 40%;
+}
