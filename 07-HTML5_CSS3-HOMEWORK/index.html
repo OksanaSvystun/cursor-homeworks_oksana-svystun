@@ -21,52 +21,277 @@
 
 <body>
    <div class="wrapper">
-      <aside class="aside">
-         <nav class="nav">
-            <span class="logo">F.</span>
-            <div class="navigation">
-               <a href="#" class="navigation-link">
-                  <svg class="nav-icon">
-                     <use xlink:href="./images/icons.svg#home"></use>
-                  </svg>
-               </a>
-               <a href="#" class="navigation-link">
-                  <svg class="nav-icon">
-                     <use xlink:href="./images/icons.svg#study"></use>
-                  </svg>
-               </a>
-               <a href="#" class="navigation-link">
-                  <svg class="nav-icon">
-                     <use xlink:href="./images/icons.svg#user"></use>
-                  </svg>
-               </a>
-               <a href="#" class="navigation-link">
-                  <svg class="nav-icon">
-                     <use xlink:href="./images/icons.svg#mail"></use>
-                  </svg>
-               </a>
-               <a href="#" class="navigation-link">
-                  <svg class="nav-icon">
-                     <use xlink:href="./images/icons.svg#settings"></use>
-                  </svg>
-               </a>
-            </div>
-            <div class="navigation-exit">
-               <a href="#" class="navigation-exit-link">
-                  <svg class="nav-icon">
-                     <use xlink:href="./images/icons.svg#exit"></use>
-                  </svg>
-               </a>
-            </div>
-         </nav>
-      </aside>
+      <div class="container">
+         <aside class="aside-nav">
+            <nav class="nav">
+               <span class="logo">F.</span>
+               <div class="navigation">
+                  <a href="#" class="navigation-link">
+                     <svg class="nav-icon">
+                        <use xlink:href="./images/icons.svg#home"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="navigation-link">
+                     <svg class="nav-icon">
+                        <use xlink:href="./images/icons.svg#study"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="navigation-link">
+                     <svg class="nav-icon">
+                        <use xlink:href="./images/icons.svg#user"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="navigation-link">
+                     <svg class="nav-icon">
+                        <use xlink:href="./images/icons.svg#mail"></use>
+                     </svg>
+                  </a>
+                  <a href="#" class="navigation-link">
+                     <svg class="nav-icon">
+                        <use xlink:href="./images/icons.svg#settings"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="navigation-exit">
+                  <a href="#" class="navigation-exit-link">
+                     <svg class="nav-icon">
+                        <use xlink:href="./images/icons.svg#exit"></use>
+                     </svg>
+                  </a>
+               </div>
+            </nav>
+         </aside>
 
-      <main class="main">
-         <section class="main-content"></section>
-         <section class="info-content"></section>
-      </main>
+         <main class="main">
+            <section class="current-information">
+               <div class="greetings-wrapper">
+                  <div class="greetings">
+                     <div class="greetings-text">
+                        <h2>Hello Josh!</h2>
+                        <span>It's good to see you again.</span>
+                     </div>
+                  </div>
+                  <div class="greetings-img">
+                     <img src="./images/boy.png" alt="boy">
+                  </div>
+               </div>
+               <div class="current-course-wrapper">
+                  <div class="course-info">
+                     <div class="course-name">
+                        <div class="course-img-container">
+                           <img class="course-img" src="./images/course-spanish.png" alt="Spain flag">
+                        </div>
+                        <div class="course-name-text">
+                           <h3>Spanish B2</h3>
+                           <span>by Alejandro Velazquez</span>
+                        </div>
+
+                     </div>
+                     <div class="course-condition">
+                        <img src="./images/loading.png" alt="">
+                        <span>83%</span>
+                     </div>
+                     <div class="course-btn-container">
+
+                        <button class="course-btn">
+                           <span>Continue</span>
+                        </button>
+
+                     </div>
+                  </div>
+                  <div class="courses-navigation">
+                     <svg class="icon arrow">
+                        <use xlink:href="./images/icons.svg#arrow-left"></use>
+                     </svg>
+                     <svg class="icon arrow">
+                        <use xlink:href="./images/icons.svg#arrow-right"></use>
+                     </svg>
+                  </div>
+               </div>
+            </section>
+            <!-- /.current-information -->
+            <section class="all-courses">
+               <header class="all-courses-header">
+                  <h2>Courses</h2>
+                  <div class="courses-categories">
+                     <a href="#" class="category active">
+                        <span>All Courses</span>
+                     </a>
+                     <a href="#" class="category">
+                        <span>The Newest</span>
+                     </a>
+                     <a href="#" class="category">
+                        <span>Top Rated</span>
+                     </a>
+                     <a href="#" class="category">
+                        <span>Most Popular</span>
+                     </a>
+                  </div>
+               </header>
+               <div class="all-courses-wrapper">
+                  <div class="course-info">
+                     <div class="course-name">
+                        <div class="course-img-container">
+                           <img class="course-img" src="./images/course-figma.png" alt="Figma logo">
+                        </div>
+                        <div class="course-name-text">
+                           <h3>Learn Figma</h3>
+                           <span>by Christopher Morgan</span>
+                        </div>
+                     </div>
+                     <div class="course-time">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#clock"></use>
+                        </svg>
+                        <span>6h 30min</span>
+                     </div>
+                     <div class="course-rating">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#fire"></use>
+                        </svg>
+                        <span>4,9</span>
+                     </div>
+                     <button class="course-btn">
+                        <span>View Course</span>
+                     </button>
+                  </div>
+                  <div class="course-info">
+                     <div class="course-name">
+                        <div class="course-img-container">
+                           <img class="course-img" src="./images/course-photography.png" alt="lens">
+                        </div>
+                        <div class="course-name-text">
+                           <h3>Analog photography</h3>
+                           <span>by Gordon Norman</span>
+                        </div>
+                     </div>
+                     <div class="course-time">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#clock"></use>
+                        </svg>
+                        <span>3h 15min</span>
+                     </div>
+                     <div class="course-rating">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#fire"></use>
+                        </svg>
+                        <span>4,7</span>
+                     </div>
+                     <button class="course-btn">
+                        <span>View Course</span>
+                     </button>
+                  </div>
+                  <div class="course-info">
+                     <div class="course-name">
+                        <div class="course-img-container">
+                           <img class="course-img" src="./images/course-instagram.png" alt="Instagram logo">
+                        </div>
+                        <div class="course-name-text">
+                           <h3>Master Instagram</h3>
+                           <span>by Sophie Gill</span>
+                        </div>
+                     </div>
+                     <div class="course-time">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#clock"></use>
+                        </svg>
+                        <span>7h 40min</span>
+                     </div>
+                     <div class="course-rating">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#fire"></use>
+                        </svg>
+                        <span>4,6</span>
+                     </div>
+                     <button class="course-btn">
+                        <span>View Course</span>
+                     </button>
+                  </div>
+                  <div class="course-info">
+                     <div class="course-name">
+                        <div class="course-img-container">
+                           <img class="course-img" src="./images/course-drawing.png" alt="Pensil">
+                        </div>
+                        <div class="course-name-text">
+                           <h3>Basics of drawing</h3>
+                           <span>by Jean Tate</span>
+                        </div>
+                     </div>
+                     <div class="course-time">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#clock"></use>
+                        </svg>
+                        <span>11h 30min</span>
+                     </div>
+                     <div class="course-rating">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#fire"></use>
+                        </svg>
+                        <span>4,8</span>
+                     </div>
+                     <button class="course-btn">
+                        <span>View Course</span>
+                     </button>
+                  </div>
+                  <div class="course-info">
+                     <div class="course-name">
+                        <div class="course-img-container">
+                           <img class="course-img" src="./images/course-ps.png" alt="Photoshop logo">
+                        </div>
+                        <div class="course-name-text">
+                           <h3>Photoshop - Essence</h3>
+                           <span>by David Green</span>
+                        </div>
+                     </div>
+                     <div class="course-time">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#clock"></use>
+                        </svg>
+                        <span>5h 35min</span>
+                     </div>
+                     <div class="course-rating">
+                        <svg class="icon">
+                           <use xlink:href="./images/icons.svg#fire"></use>
+                        </svg>
+                        <span>4,7</span>
+                     </div>
+                     <button class="course-btn">
+                        <span>View Course</span>
+                     </button>
+                  </div>
+
+               </div>
+            </section>
+            <!-- /.all-courses -->
+         </main>
+
+         <aside class="aside-statistic">
+            <header class="aside-statistic-header">
+               <div class="search-container">
+                  <svg class="icon">
+                     <use xlink:href="./images/icons.svg#search"></use>
+                  </svg>
+                  <input type="text">
+               </div>
+               <svg class="icon notification">
+                  <use xlink:href="./images/icons.svg#notification"></use>
+               </svg>
+               <div class="user-information-container">
+                  <img src="./images/user-avatar.jpg" alt="user-avatar">
+                  <div class="dropdown">
+                     <span>*</span>
+                     <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                     </div>
+                  </div>
+               </div>
+
+            </header>
+         </aside>
+      </div>
    </div>
-
 </body>
 
 </html>
