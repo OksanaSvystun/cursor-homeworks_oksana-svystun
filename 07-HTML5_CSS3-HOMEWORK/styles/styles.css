@@ -1,6 +1,8 @@
 body {
    min-width: 1100px;
    min-height: 600px;
+   width: 1440px;
+   height: 900px;
 }
 
 h1,
@@ -18,13 +20,13 @@ h6 {
    justify-content: center;
    align-items: center;
 
-   /* width: 1440px; */
+   padding: 1.7% 5.56% 0 2.23%;
 }
 
 .container {
    width: 100%;
    /* max-width: 1440px; */
-   margin: 1.7% 5.56% 0 2.23%;
+   /* margin: 1.7% 5.56% 0 2.23%; */
    /* display: grid;
    grid-template-columns:11% 47.1% 35.3%;
    column-gap: 2.9%; */
@@ -194,7 +196,7 @@ h6 {
    left: -50%;
    top: -1em;
 }
-.course-btn{
+.btn{
    display: flex;
    align-items: center;
    justify-content: center;
@@ -278,6 +280,9 @@ h6 {
    width: 30.5%;
    margin-top: 2.4em;
 }
+.aside-statistic >*{
+   margin-bottom: 1em;
+}
 /* .aside-statistic-header */
 .aside-statistic-header{
    display: flex;
@@ -320,15 +325,25 @@ h6 {
 }
 .dropdown {
    position: relative;
-   display: inline-block;
+   display: flex;
+   justify-content: end;
 }
+.dropdown::after{
+   content: ">";
+   display: block;
+   color: #000;
+   transform: rotate(90deg);
+   height: 100%;
+}
+
 .dropdown-content {
    display: none;
    position: absolute;
    background-color: #f9f9f9;
-   min-width: 160px;
+   min-width: 100px;
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    z-index: 1;
+   top: 1em;
 }
 
 .dropdown-content a {
@@ -347,8 +362,72 @@ h6 {
 }
 /* aside-statistic-header end*/
 
+/* user-courses-info */
+.user-courses-info{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.amount{
+   background: #F5F5F7;
+   border-radius: 8px;
+   width: 48%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.amount h4{
+   font-size: 5em;
+   margin-right: 5%;
+}
+.amount p{
+   width: 40%;
+}
+/* user-courses-info end */
 
+/* user-statistic */
+.user-statistic{
+   display: flex;
+   flex-direction: column;
+}
+.statistic-options{
+   display: flex;
+   justify-content: space-between;
+}
+.statistic-options-links{
+   display: flex;
+   justify-content: space-between;
+   width: 50%;
+}
+.statistic-options-links a{
+   color: #000;
+   text-decoration: none;
+   opacity: .3;
+}
+.statistic-options-links a.active{
+   opacity: 1;
+}
+/* user-statistic end */
 
+/* premium */
+.premium{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background: #F5F5F7;
+   border-radius: 8px;
+   padding: 2em;
+}
+.premium-info-container{
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.premium img{
+   width: 70%;
+}
+/* premium end */
 
 
 
