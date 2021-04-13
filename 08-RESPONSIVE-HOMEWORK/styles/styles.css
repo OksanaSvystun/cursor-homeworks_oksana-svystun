@@ -38,7 +38,7 @@ a {
 header {
    width: 100%;
    height: 41.5em;
-   background: #F4F6F9 url(/images/phones.png) no-repeat right bottom;
+   background: #F4F6F9 url(../images/phones.png) no-repeat right bottom;
    background-size: contain;
    display: flex;
 }
@@ -90,7 +90,7 @@ header button {
 .first-section {
    height: 37em;
    background: linear-gradient(270deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 80.14%),
-      rgba(255, 255, 255, 0.4) url(/images/footballers.png) no-repeat left bottom;
+      rgba(255, 255, 255, 0.4) url(../images/footballers.png) no-repeat left bottom;
    background-size: contain;
    display: flex;
 }
