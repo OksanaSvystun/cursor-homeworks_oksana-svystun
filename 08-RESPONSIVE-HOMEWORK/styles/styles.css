@@ -1,0 +1,132 @@
+* {
+   margin: 0;
+   font-family: 'Lato', sans-serif;
+}
+
+body {
+   display: block;
+}
+
+h1, h2{
+   color: #333333;
+}
+
+h1{
+   font-size: 2.2em;
+}
+
+h2 {
+   text-transform: capitalize;
+   font-size: 1.7em;
+}
+
+h3 {
+   text-transform: uppercase;
+   color: #00ADEE;
+}
+
+p {
+   color: #4F4F4F;
+}
+
+a {
+   color: #00ADEE;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+header {
+   width: 100%;
+   height: 41.5em;
+   background: #F4F6F9 url(/images/phones.png) no-repeat right bottom;
+   background-size: contain;
+   display: flex;
+}
+
+.container {
+   width: 80%;
+   height: 65%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   margin: 5% auto;
+}
+
+.icon {
+   width: 100px;
+   height: 32px;
+}
+
+.info-container {
+   height: 70%;
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.text-info {
+   height: 55%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+header button {
+   padding: 0;
+   margin-right: 2em;
+}
+
+.appStore,
+.googlePlay {
+   border: none;
+   background: none;
+}
+
+
+/* main */
+
+
+.first-section {
+   height: 37em;
+   background: linear-gradient(270deg, #FFFFFF 50%, rgba(255, 255, 255, 0) 80.14%),
+      rgba(255, 255, 255, 0.4) url(/images/footballers.png) no-repeat left bottom;
+   background-size: contain;
+   display: flex;
+}
+
+.media-info {
+   width: 50%;
+   height: 100%;
+}
+
+.photo {
+   position: relative;
+   height: 100%;
+}
+
+.match-info {
+   width: 450px;
+   position: absolute;
+   top: 14%;
+   left: 13%;
+   z-index: 1;
+}
+
+.match-video {
+   width: 350px;
+   position: relative;
+   top: 50%;
+   left: 38%;
+}
+
+.text-info-container {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+main .text-info {
+   width: 50%;
+}
