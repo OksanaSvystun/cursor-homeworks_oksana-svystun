@@ -27,6 +27,9 @@ h3 {
 
 p {
    color: #4F4F4F;
+   font-size: 1em;
+   line-height: 1.4em;
+   font-weight: 400;
 }
 
 a {
@@ -122,6 +125,7 @@ header button {
 
 .text-info-container {
    width: 50%;
+   height: 100%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -129,4 +133,53 @@ header button {
 
 main .text-info {
    width: 55%;
+}
+
+
+.second-section {
+   height: 79.5vh;
+   background: #fff url(../images/sec2.png) no-repeat;
+   background-size: contain;
+}
+.second-section .text-info{
+   height: 40%;
+   width: 65%;
+}
+
+.third-section{
+   height: 81.7vh;
+   background: #00ADEE url(../images/sec3.png) no-repeat;
+   background-size: contain;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.third-section p,
+.third-section h2 {
+   color: #fff;
+}
+.info-wrapper{
+   width: 75%;
+   height: 85%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+.features-container{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   justify-content: space-around;
+   row-gap: 2.5em;
+   column-gap: 5.7em;
+}
+.features-container p{
+   width: 95%;
+}
+.features-container p::before{
+   content: '•';
+}
+.third-section .icon{
+   width: 40px;
+   height: 40px;
 }
