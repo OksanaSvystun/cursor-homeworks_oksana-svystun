@@ -34,6 +34,16 @@ a {
    text-decoration: none;
    font-weight: bold;
 }
+a:hover{
+   color: rgb(156, 0, 0);
+   font-weight: bolder;
+}
+button:hover{
+ cursor: pointer;
+ box-shadow: -7px 7px 14px rgb(0 0 0 / 30%);
+ background-color: black;
+ border-radius: 7px;
+}
 
 .text-section {
    width: 100%;
@@ -76,14 +86,14 @@ header {
 header p{
    width: 70%;
 }
-header button {
+ button {
    padding: 0;
    margin-right: 2em;
 }
+
 .appStore,
 .googlePlay {
    border: none;
-   background: none;
 }
 
 
@@ -402,6 +412,9 @@ input:checked+.slider:before {
    width: 7px;
    height: 12px;
 }
+.arrow-container:hover{
+  background: rgb(213, 255, 255);
+}
 .dots{
    margin: 1em;
 }
@@ -519,4 +532,8 @@ footer a{
 .social-media .icon{
    width: 1.5em;
    height: 1.5em;
+   fill: #fff;
+}
+.social-media .icon:hover{
+   fill: rgb(251, 255, 1);
 }
