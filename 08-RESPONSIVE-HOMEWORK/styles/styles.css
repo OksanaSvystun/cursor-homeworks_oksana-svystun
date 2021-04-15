@@ -479,7 +479,6 @@ input:checked+.slider:before {
 
 
 
-
 .sixth-section{
    height: 30.2em;
    background: #F4F6F9 url(../images/sec6.png) no-repeat left;
@@ -493,4 +492,31 @@ input:checked+.slider:before {
 }
 .sixth-section .text-info{
    height: 80%;
+}
+
+/* /.main */
+
+
+footer{
+   height: 8em;
+   background-color: #00ADEE;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+footer .container{
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+footer a{
+   color: #fff;
+   margin-right: 1em;
+}
+.social-media{
+   display: flex;
+}
+.social-media .icon{
+   width: 1.5em;
+   height: 1.5em;
 }
