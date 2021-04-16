@@ -196,6 +196,7 @@ h4{
 .course-condition{
    margin-left: .8em;
    margin-right: .8em;
+   position: relative;
 }
 .course-condition img{
    height: 2.8em;
