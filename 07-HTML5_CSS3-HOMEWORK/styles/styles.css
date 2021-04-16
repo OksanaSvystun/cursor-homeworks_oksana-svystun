@@ -43,7 +43,7 @@ h4{
 
 .aside-nav {
    height: 835px;
-   width: 132px;
+   width: 10%;
    background-color: #000;
    border-radius: 24px;
    display: flex;
@@ -195,16 +195,17 @@ h4{
 }
 .course-condition{
    margin-left: .8em;
+   margin-right: .8em;
 }
 .course-condition img{
    height: 2.8em;
    position: relative;
 }
 .course-condition span{
-   position: relative;
+   position: absolute;
    font-size: 1em;
-   left: -50%;
-   top: -1.05em;
+   left: 20%;
+   top: 25%;
 }
 .btn{
    display: flex;
@@ -334,6 +335,7 @@ h4{
    border: none;
    background: none;
    width: 90%;
+   outline: none;
 }
 .notification{
    width: 31px;
