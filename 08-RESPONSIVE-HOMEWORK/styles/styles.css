@@ -41,8 +41,6 @@ a:hover{
 button:hover{
  cursor: pointer;
  box-shadow: -7px 7px 14px rgb(0 0 0 / 30%);
- background-color: black;
- border-radius: 7px;
 }
 
 .text-section {
@@ -89,6 +87,8 @@ header p{
  button {
    padding: 0;
    margin-right: 2em;
+   background-color: black;
+   border-radius: 7px;
 }
 
 .appStore,
@@ -186,9 +186,12 @@ header p{
    border-radius: 0 0 4px 4px;
 }
 .card-footer label{
-   margin-left: 1em;
+   margin-left: 5%;
    font-size: 1.1em;
    color: #4F4F4F;
+}
+.card-footer label:last-child {
+   margin-right: 1em;
 }
 /* _________________________________________ */
 /* toggle switch */
@@ -269,7 +272,7 @@ input:checked+.slider:before {
 .second-section {
    height: 44.7em;
    background: #fff url(../images/sec2.png) no-repeat right;
-   background-size: contain;
+   background-size: cover;
 }
 .second-section .text-info{
    /* height: 40%; */
@@ -293,6 +296,9 @@ input:checked+.slider:before {
 .third-section p,
 .third-section h2 {
    color: #fff;
+}
+.third-section h2{
+   margin-bottom: 5%;
 }
 .info-wrapper{
    width: 75%;
@@ -509,7 +515,7 @@ input:checked+.slider:before {
 
 /* /.main */
 
-
+/* footer */
 footer{
    height: 8em;
    background-color: #00ADEE;
@@ -536,4 +542,182 @@ footer a{
 }
 .social-media .icon:hover{
    fill: rgb(251, 255, 1);
+}
+/* /.footer */
+
+/* ********************************************************************************************************************************************************************************************************************************* */
+
+/* media */
+@media(min-width: 1440px){
+   .second-section{
+      background-size: contain;
+   }
+}
+@media(max-width: 1059px){
+   .store{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+   } 
+   .store>*{
+      margin-top: 1em;
+   }
+   .text-info{
+      height: 80%;
+      padding: 10px;
+   }
+
+   .container{
+      height: 95%;
+   }
+   
+/* header */
+   header{
+      height: 35em;
+   }
+   header .container,
+   .sixth-section .container {
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+   }
+   header .text-info,
+   .sixth-section .text-info{
+      background: rgba(244, 246, 249, .8);
+      text-align: center;
+      align-items: stretch;
+      border-radius: 10px;
+   }
+   header p{
+      width: 100%;
+   }
+
+
+/* first-sectoin */
+   .first-section{
+      height: 32em;
+   }
+   .media-card{
+      height: 40%;
+      width: 90%;
+      left: -19%;
+      top: 5%;
+   }
+   .card-main-img img:first-child {
+      left: -25%;
+      width: 50%;
+   }
+   .card-main-img img:last-child {
+      left: 38%;
+      width: 60%;
+   }   
+   .card-footer{
+      padding: 5px 0;
+   }
+   .media-vid{
+      width: 90%;
+   }
+   .first-section .text-info,
+   .second-section .text-info {
+      height: 95%;
+      align-items: stretch;
+      text-align: center;
+      background: rgba(255, 255, 255, .8);
+      border-radius: 10px;
+   }
+
+
+/* second-section */
+   .second-section{
+      height: 30em;
+   }
+   .second-section .link-info{
+      margin: 0;
+   }
+
+
+/* third-section */
+   .info-wrapper{
+      width: 90%;
+      height: 95%;
+   }
+   .third-section h2{
+      margin-bottom: 5%;
+   }
+   .features-container{
+      row-gap: 5%;
+      column-gap: 5%;
+      height: 100%;
+   }
+
+   .sixth-section .store > *{
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+      flex-wrap: wrap;
+   }
+   .sixth-section .text-info{
+      height: 90%;
+   }
+   
+}
+@media(max-width: 720px){
+   body{
+      background-color: chartreuse;
+   }
+   h1 {
+      font-size: 1.9em;
+   }
+
+
+/* header */
+   header{
+      background: #F4F6F9;
+   }
+   .info-container{
+      width: 100%;
+      text-align: center;
+   }
+   .text-info{
+      align-items: center;
+   }
+   .store{
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   header .store>*{
+      width: 40%;
+      margin: 0;
+   }
+   header .store > *>*{
+      width: 100%;
+   }
+
+
+/* first-section */
+   .first-section{
+      /* background: #fff; */
+      h
+   }
+   .first-section .container{
+      flex-direction: column-reverse;
+      height: 100%;
+      position: relative;
+   }
+   .first-section .info-container{
+      width: 100%;
+      height: 50%;
+   }
+   .first-section .text-info,
+   .second-section .text-info{
+      background: none;
+   }
+   .first-section .media-info-container{
+      position: relative;
+      width: 100%;
+      height: 50%;
+   }
 }
