@@ -100,7 +100,9 @@ button {
 }
 
 /* main */
-
+main{
+  overflow-x: hidden;
+}
 .first-section {
   height: 37em;
   background: linear-gradient(
