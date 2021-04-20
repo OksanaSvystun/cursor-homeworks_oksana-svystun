@@ -21,9 +21,12 @@
   <body>
     <header class="container-fluid header">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Instagram</a>
-
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <svg class="icon logo">
+              <use xlink:href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -36,75 +39,145 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0">
+          <div
+            class="collapse navbar-collapse post-nav-items"
+            id="navbarSupportedContent"
+          >
+            <form class="form-inline">
+              <button class="btn shadow-none icon-search" type="submit">
+                <svg class="icon search">
+                  <use xlink:href="./images/icons.svg#search"></use>
+                </svg>
+              </button>
               <input
-                class="form-control mr-sm-2"
+                class="form-control shadow-none"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button
-                class="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
             </form>
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">
+                  <svg class="icon header-icon">
+                    <use xlink:href="./images/icons.svg#home"></use>
+                  </svg>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link msg-link" href="#">
+                  <svg class="icon header-icon">
+                    <use xlink:href="./images/icons.svg#message"></use>
+                  </svg>
+                  <div class="msg-number">
+                    <span>5</span>
+                  </div>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">
+                  <svg class="icon header-icon">
+                    <use xlink:href="./images/icons.svg#navigator"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <svg class="icon header-icon">
+                    <use xlink:href="./images/icons.svg#like"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="user-mini">
+                  </div>
+                </a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
+
     <main class="container">
       <div class="main-header">
         <div class="row">
           <div class="col-4 align-self-center">
             <div class="row justify-content-center">
-              <div class="col-7">
+              <div class="col-10 justify-content-center avatar">
                 <img src="./images/elipse.png" alt="avatar" width="100%" />
               </div>
             </div>
           </div>
-          <div class="col-8 justify-content-space-between">
+          <div class="col-6 justify-content-space-between">
             <div class="row text-info-container">
-              <div class="col-2">
+              <!-- <div class="col-2">
                 <h2>name</h2>
               </div>
+              <div class="col-2 btn-wrapper">
+                <button type="button" class="btn btn-primary shadow-none">Follow</button>
+              </div>
+              <div class="col-1 btn-wrapper">
+                <button type="button" class="btn btn-primary shadow-none">
+                  <svg class="icon arrow">
+                    <use xlink:href="./images/icons.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="col-1 btn-wrapper">
+                <button type="button" class="btn dots shadow-none">
+                  <span></span>
+                </button>
+              </div> -->
+              <h2>name</h2>
+
+              <div class="buttons">
+                <button type="button" class="btn bth-blue shadow-none">
+                Follow
+              </button>
+
+              <button type="button" class="btn bth-blue shadow-none">
+                <svg class="icon arrow">
+                  <use xlink:href="./images/icons.svg#arrow"></use>
+                </svg>
+              </button>
+
+              <button type="button" class="btn dots shadow-none">
+                <span></span>
+              </button>
+              </div>
+              
+            </div>
+            <div class="row text-info-container">
+              <!-- <div class="col-2">
+                <span class="bold">79</span>
+                <span>posts</span>
+              </div>
               <div class="col-2">
-                <button type="button" class="btn btn-primary">Follow</button>
+                <span class="bold">379</span>
+                <span>followers</span>
               </div>
-              <div class="col-1">
-                <button type="button" class="btn btn-primary">*</button>
+              <div class="col-2">
+                <span class="bold">79</span>
+                <span>following</span>
+              </div> -->
+              <div class="num"> 
+                <span class="bold">79</span>
+                <span>posts</span>
               </div>
-              <div class="col-1">
-                <button type="button" class="btn">***</button>
+              <div class="num">
+                <span class="bold">379</span>
+                <span>followers</span>
+              </div>
+              <div class="num">
+                <span class="bold">79</span>
+                <span>following</span>
               </div>
             </div>
             <div class="row text-info-container">
-              <div class="col-2">
-                <span>79 posts</span>
-              </div>
-              <div class="col-3">
-                <span>379 followers</span>
-              </div>
-              <div class="col-3">
-                <span>179 following</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-10">
-                <span>Name</span>
+              <!-- <div class="col-10">
+                <span class="bold">Name</span>
               </div>
             </div>
             <div class="row">
@@ -119,20 +192,21 @@
             <div class="row">
               <div class="col-10">
                 <a href="bit.ly/35Ce3mX">bit.ly/35Ce3mX</a>
-              </div>
+              </div> -->
+              <span class="bold">Name</span>
+              <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text.
+              </p>
+              <a href="bit.ly/35Ce3mX">bit.ly/35Ce3mX</a>
             </div>
-
-            <!-- <div class="name">
-              h2+.buttons
-            </div>
-            <div class="number-info"></div>
-            <div class="text-info"></div> -->
           </div>
         </div>
         <div class="row stories-container">
           <div class="col-1 stories">
             <div class="story-wrapper">
-              <img src="./images/elipse.png" alt="avatar"/>
+              <img src="./images/elipse.png" alt="avatar" />
             </div>
             <span>Name</span>
           </div>
@@ -144,79 +218,106 @@
           </div>
           <div class="col-1 stories">
             <div class="story-wrapper">
-              <img src="./images/elipse.png" alt="avatar"/>
+              <img src="./images/elipse.png" alt="avatar" />
             </div>
             <span>Name</span>
           </div>
+          <!-- <div class="stories">
+            <div class="story-wrapper">
+              <img src="./images/elipse.png" alt="avatar" />
+            </div>
+            <span>Name</span>
+          </div>
+          <div class="stories">
+            <div class="story-wrapper">
+              <img src="./images/elipse.png" alt="avatar" />
+            </div>
+            <span>Name</span>
+          </div>
+          <div class="stories">
+            <div class="story-wrapper">
+              <img src="./images/elipse.png" alt="avatar" />
+            </div>
+            <span>Name</span>
+          </div> -->
         </div>
       </div>
       <div class="main">
         <div class="row justify-content-center">
-          <div class="col-1">
-            <span class="uppercase">posts</span>
+          <div class="col-2">
+            <div class="post-nav-item active">
+              <svg class="icon post-nav">
+                <use xlink:href="./images/icons.svg#posts"></use>
+              </svg>
+              <span class="uppercase">posts</span>
+            </div>
           </div>
-          <div class="col-1">
-            <span class="uppercase">tagged</span>
+          <div class="col-2">
+            <div class="post-nav-item">
+              <svg class="icon post-nav">
+                <use xlink:href="./images/icons.svg#tagged"></use>
+              </svg>
+              <span class="uppercase">tagged</span>
+            </div>
           </div>
         </div>
         <div class="row posts">
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
           <div class="col-4">
-            <img src="./images/rectangle.png" alt="post" width="100%">
+            <img src="./images/rectangle.png" alt="post" width="100%" />
           </div>
         </div>
-      </div> 
-
+      </div>
     </main>
 
     <!-- bootstrap -->
