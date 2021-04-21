@@ -54,6 +54,7 @@
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
+                maxlength="10"
               />
             </form>
             <ul class="navbar-nav">
@@ -90,8 +91,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <div class="user-mini">
-                  </div>
+                  <div class="user-mini"></div>
                 </a>
               </li>
             </ul>
@@ -103,34 +103,34 @@
     <main class="container">
       <div class="main-header">
         <div class="row">
-          <div class="col-4 align-self-center">
-            <div class="row justify-content-center">
-              <div class="col-10 justify-content-center avatar">
-                <img src="./images/elipse.png" alt="avatar" width="100%" />
-              </div>
-            </div>
-          </div>
-          <div class="col-6 justify-content-space-between">
-            <div class="row text-info-container">
-              <!-- <div class="col-2">
+          <div class="col-4 disp-none-4"></div>
+          <div class="col-8">
+            <div class="row">
+              <div class="col-1 pl-0 media mr-5">
                 <h2>name</h2>
               </div>
-              <div class="col-2 btn-wrapper">
-                <button type="button" class="btn btn-primary shadow-none">Follow</button>
+
+              <div class="col-1 btn-wrapper ml-1 mr-4">
+                <button type="button" class="btn btn-primary shadow-none">
+                  Follow
+                </button>
               </div>
-              <div class="col-1 btn-wrapper">
+
+              <div class="col-1 btn-wrapper ml-4 mr-2">
                 <button type="button" class="btn btn-primary shadow-none">
                   <svg class="icon arrow">
                     <use xlink:href="./images/icons.svg#arrow"></use>
                   </svg>
                 </button>
               </div>
+
               <div class="col-1 btn-wrapper">
                 <button type="button" class="btn dots shadow-none">
                   <span></span>
                 </button>
-              </div> -->
-              <h2>name</h2>
+              </div>
+              <div class="col-6 disp-none-6"></div>
+              <!-- <h2>name</h2>
 
               <div class="buttons">
                 <button type="button" class="btn bth-blue shadow-none">
@@ -146,34 +146,45 @@
               <button type="button" class="btn dots shadow-none">
                 <span></span>
               </button>
-              </div>
-              
+              </div> -->
             </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 align-self-center justify-content-center avatar">
+            <!-- <div class="row justify-content-center">
+              <div class="col-10 justify-content-center avatar"> -->
+            <img src="./images/elipse.png" alt="avatar" width="100%" />
+            <!-- </div>
+            </div> -->
+          </div>
+          <div class="col-8 justify-content-space-between">
             <div class="row text-info-container">
-              <!-- <div class="col-2">
+              <div class="col-2 pl-0 mr-1">
                 <span class="bold">79</span>
                 <span>posts</span>
               </div>
-              <div class="col-2">
+              <div class="col-3 mr-2 ml-2">
                 <span class="bold">379</span>
                 <span>followers</span>
               </div>
-              <div class="col-2">
+              <div class="col-3 ml-4">
+                <span class="bold">79</span>
+                <span>following</span>
+              </div>
+              <!-- <div class="num">
+                <span class="bold">79</span>
+                <span>posts</span>
+              </div>
+              <div class="num">
+                <span class="bold">379</span>
+                <span>followers</span>
+              </div>
+              <div class="num">
                 <span class="bold">79</span>
                 <span>following</span>
               </div> -->
-              <div class="num"> 
-                <span class="bold">79</span>
-                <span>posts</span>
-              </div>
-              <div class="num">
-                <span class="bold">379</span>
-                <span>followers</span>
-              </div>
-              <div class="num">
-                <span class="bold">79</span>
-                <span>following</span>
-              </div>
             </div>
             <div class="row text-info-container">
               <!-- <div class="col-10">
@@ -195,9 +206,9 @@
               </div> -->
               <span class="bold">Name</span>
               <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text.
               </p>
               <a href="bit.ly/35Ce3mX">bit.ly/35Ce3mX</a>
             </div>
