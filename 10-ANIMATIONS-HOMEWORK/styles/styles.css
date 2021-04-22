@@ -1,7 +1,14 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
 .container
 {
-    width: 30vw;
-    height: 30vh;
+    width: 40vw;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +20,6 @@
 
 /* SWORDS */
 .star-wars_swords{
-    
     background-color: #000;
 }
 
@@ -87,4 +93,266 @@
 
 /* SWORDS END */
 
-/*  */
+
+
+
+/*  NEWTON'S CRADLE */
+.newton-cradle{
+ background-color: rgb(214, 196, 162);
+}
+.cradle{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.ball-container{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ball-container::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 10px;
+    background-color: rgba(102, 102, 102, 0.1);
+    bottom: 0;
+    margin-top: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 5px rgba(102, 102, 102, 0.1);
+}
+.ball{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: tomato;
+    margin-top: 0;
+}
+.ball-container:nth-child(1) .ball{
+    background-image: linear-gradient(to right, rgba(23, 23, 182, 0.8) , rgba(67, 10, 173, 0.8));  
+    position: relative;
+    animation-name: move-left;
+    animation-duration: 0.7s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}
+.ball-container:nth-child(2) .ball{
+  background-image: linear-gradient(to right, rgba(67, 10, 173, 0.8) , rgba(144, 85, 253, 0.8));  
+}
+.ball-container:nth-child(3) .ball{
+  background-image: linear-gradient(to right, rgba(144, 85, 253, 0.8) , rgba(173, 4, 196, 0.8));  
+}
+.ball-container:nth-child(4) .ball{
+  background-image: linear-gradient(to right, rgba(173, 4, 196, 0.8) , rgba(240, 56, 148, 0.8));  
+}
+.ball-container:nth-child(5) .ball{
+  background-image: linear-gradient(to right, rgba(240, 56, 148, 0.8) , rgba(199, 5, 96, 0.8));  
+}
+.ball-container:nth-child(6) .ball{
+  background-image: linear-gradient(to right, rgba(199, 5, 96, 0.8) , rgba(255, 43, 61, 0.8));  
+}
+.ball-container:nth-child(7) .ball{
+    background-image: linear-gradient(to right, rgba(255, 43, 61, 0.8) , rgba(255, 0, 0, 0.8));  
+    position: relative;
+    animation-name: move-right;
+    animation-duration: 0.7s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+.ball-container:first-child::after{
+    position: relative;
+    animation-name: move-left-shadow;
+    animation-duration: 0.7s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+}
+.ball-container:last-child::after{
+    position: relative;
+    animation-name: move-right-shadow;
+    animation-duration: 0.7s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-left {
+  0%{
+      left: 0%;
+      top: 0%;
+  } 
+  10%{
+      left: -20%;
+      top: -5%;
+  }
+  15%{
+      left: -40%;
+      top: -12%;
+  }
+  20%{
+      left: -60%;
+      top: -20%;
+  }
+  25%{
+      left: -80%;
+      top: -37%;
+  }
+  30%{
+      left: -100%;
+      top: -50%;
+  } 
+  35%{
+      left: -80%;
+      top: -37%;
+  }
+  40%{
+      left: -60%;
+      top: -20%;
+  }
+  45%{
+      left: -40%;
+      top: -12%;
+  }
+  50%{
+      left: -20%;
+      top: -5%;
+  }
+  60%{
+      left: 0%;
+      top: 0%;
+  }
+  100%{
+      left: 0%;
+      top: 0%;
+  }
+} 
+@keyframes move-left-shadow{
+    0%{
+      left: 0%;
+  } 
+  10%{
+      left: -20%;
+  }
+  15%{
+      left: -40%;
+  }
+  20%{
+      left: -60%;
+  }
+  25%{
+      left: -80%;
+  }
+  30%{
+      left: -90%;
+  } 
+  35%{
+      left: -80%;
+  }
+  40%{
+      left: -60%;
+  }
+  45%{
+      left: -40%;
+  }
+  50%{
+      left: -20%;
+  }
+  60%{
+      left: 0%;
+  }
+  100%{
+      left: 0%;
+  }
+}
+
+
+@keyframes move-right {
+  0%{
+      right: 0%;
+      top: 0%;
+  } 
+  10%{
+      right: -20%;
+      top: -5%;
+  }
+  15%{
+      right: -40%;
+      top: -12%;
+  }
+  20%{
+      right: -60%;
+      top: -20%;
+  }
+  25%{
+      right: -80%;
+      top: -37%;
+  }
+  30%{
+      right: -100%;
+      top: -50%;
+  } 
+  35%{
+      right: -80%;
+      top: -37%;
+  }
+  40%{
+      right: -60%;
+      top: -20%;
+  }
+  45%{
+      right: -40%;
+      top: -12%;
+  }
+  50%{
+      right: -20%;
+      top: -5%;
+  }
+  60%{
+      right: 0%;
+      top: 0%;
+  }
+  100%{
+      right: 0%;
+      top: 0%;
+  }
+}
+@keyframes move-right-shadow{
+    0%{
+      right: 0%;
+  } 
+  10%{
+      right: -20%;
+  }
+  15%{
+      right: -40%;
+  }
+  20%{
+      right: -60%;
+  }
+  25%{
+      right: -80%;
+  }
+  30%{
+      right: -90%;
+  } 
+  35%{
+      right: -80%;
+  }
+  40%{
+      right: -60%;
+  }
+  45%{
+      right: -40%;
+  }
+  50%{
+      right: -20%;
+  }
+  60%{
+      right: 0%;
+  }
+  100%{
+      right: 0%;
+  }
+}
