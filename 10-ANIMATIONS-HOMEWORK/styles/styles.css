@@ -1,0 +1,90 @@
+.container
+{
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+/* SWORDS */
+.star-wars_swords{
+    
+    background-color: #000;
+}
+
+.sword{
+    display: flex;
+    width: 45px;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+}
+.sword::before{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s;
+}
+.sword::after{
+    content: '';
+    display: block;
+    width: 35px;
+    border-bottom: 2px solid #fff;
+    transition: .5s;
+}
+
+.swords{
+    cursor: pointer;
+}
+.first-sword{
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.second-sword{
+    transform: rotate(180deg);
+    transition: .3s;
+}
+.third-sword{    
+    transition: .3s;
+}
+.swords:hover .click-cross-two .sword::before,
+.swords:hover .click-cross-two .sword::after{
+    box-shadow: 0 0 5px 2px rgba(255, 230, 0, 0.6);
+    
+}
+.swords:hover .click-cross-one .sword::before,
+.swords:hover .click-cross-one .sword::after{
+    box-shadow: 0 0 5px 3px rgba(248, 15, 15, 0.6);
+}
+
+
+/* click */
+
+.click-up{
+    transform: translate3d(0,-100%,0);
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.click-cross-one{
+    transform: rotate(225deg);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.click-cross-two{
+    transform: translate(0, -16px) rotate(-45deg);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+/* SWORDS END */
+
+/*  */
