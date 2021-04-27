@@ -216,7 +216,7 @@ footer .footer-header {
 footer .footer-header > * {
   margin: 1em;
 }
-footer .footer-headerspan {
+footer .footer-header span {
   color: #939EA4;
   font-size: 0.9em;
   display: inline-block;
