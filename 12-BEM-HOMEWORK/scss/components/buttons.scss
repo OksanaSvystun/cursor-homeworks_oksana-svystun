@@ -1,23 +1,23 @@
-.btn{
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  &__small{
-    font-size: .9em;
+  &__small {
+    font-size: 0.9em;
   }
 }
-.other-buttons{
-    .icon{
-    &__small{
+.other-buttons {
+  .icon {
+    &__small {
       width: 1em;
       height: 1em;
     }
   }
 }
-.search{
+.search {
   display: flex;
   justify-content: space-around;
-  .little{
+  .little {
     width: 2em;
     height: 2em;
     border-radius: 100%;
@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
   }
-  .big{
+  .big {
     width: 2.5em;
     height: 2.5em;
     border-radius: 100%;
@@ -34,18 +34,18 @@
     align-items: center;
   }
 }
-.icon{
+.icon {
   height: 1.5em;
   width: 1.5em;
   margin: 0 2px;
-  transition: .3s;
+  transition: 0.3s;
   fill: #fff;
   stroke: #fff;
-  &__small{
+  &__small {
     width: 1.2em;
     height: 1.2em;
   }
-  &__smallest{
+  &__smallest {
     width: 0.5em;
     height: 0.6em;
     margin-left: 0.5em;
@@ -54,52 +54,52 @@
 }
 .btn-primary,
 .btn-danger,
-.btn-success{
+.btn-success {
   color: #fff;
-  .icon{
+  .icon {
     fill: #fff;
     stroke: #fff;
   }
 }
-.btn-light{
+.btn-light {
   color: #878787;
-  &:hover .icon{
-      fill: #2C2C2C;
-      stroke: #2C2C2C;
+  &:hover .icon {
+    fill: #2c2c2c;
+    stroke: #2c2c2c;
   }
-  .icon{
+  .icon {
     fill: #878787;
     stroke: #878787;
   }
 }
-.btn-outline-secondary{
-  color: #2C2C2C;
-  &:hover .icon{
-      fill: #fff;
-      stroke: #fff;
+.btn-outline-secondary {
+  color: #2c2c2c;
+  &:hover .icon {
+    fill: #fff;
+    stroke: #fff;
   }
-  .icon{
-    fill: #2C2C2C;
-    stroke: #2C2C2C;
-  }  
-}
-.btn-outline-primary{
-  color: #18A0FB;
-  &:hover .icon{
-      fill: #fff;
-      stroke: #fff;
-  }
-  .icon{
-    fill: #18A0FB;
-    stroke: #18A0FB;
+  .icon {
+    fill: #2c2c2c;
+    stroke: #2c2c2c;
   }
 }
-.tags-wrapper{
-  .btn{
-    padding: .2em 1em;
-  } 
-  .btn-light{
-    color: #2C2C2C;
+.btn-outline-primary {
+  color: #18a0fb;
+  &:hover .icon {
+    fill: #fff;
+    stroke: #fff;
+  }
+  .icon {
+    fill: #18a0fb;
+    stroke: #18a0fb;
+  }
+}
+.tags-wrapper {
+  .btn {
+    padding: 0.2em 1em;
+  }
+  .btn-light {
+    color: #2c2c2c;
     border: 1px solid #d5d5d5;
   }
 }

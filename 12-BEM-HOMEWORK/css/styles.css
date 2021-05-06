@@ -68,8 +68,8 @@
   color: #878787;
 }
 .btn-light:hover .icon {
-  fill: #2C2C2C;
-  stroke: #2C2C2C;
+  fill: #2c2c2c;
+  stroke: #2c2c2c;
 }
 .btn-light .icon {
   fill: #878787;
@@ -77,34 +77,34 @@
 }
 
 .btn-outline-secondary {
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 .btn-outline-secondary:hover .icon {
   fill: #fff;
   stroke: #fff;
 }
 .btn-outline-secondary .icon {
-  fill: #2C2C2C;
-  stroke: #2C2C2C;
+  fill: #2c2c2c;
+  stroke: #2c2c2c;
 }
 
 .btn-outline-primary {
-  color: #18A0FB;
+  color: #18a0fb;
 }
 .btn-outline-primary:hover .icon {
   fill: #fff;
   stroke: #fff;
 }
 .btn-outline-primary .icon {
-  fill: #18A0FB;
-  stroke: #18A0FB;
+  fill: #18a0fb;
+  stroke: #18a0fb;
 }
 
 .tags-wrapper .btn {
   padding: 0.2em 1em;
 }
 .tags-wrapper .btn-light {
-  color: #2C2C2C;
+  color: #2c2c2c;
   border: 1px solid #d5d5d5;
 }
 
