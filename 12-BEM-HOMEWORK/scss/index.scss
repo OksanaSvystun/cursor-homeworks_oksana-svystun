@@ -1,0 +1,45 @@
+@import './components/buttons.scss';
+.container-xl{
+  margin: 1vw 0;
+}
+.buttons-container{
+  margin: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags-wrapper{
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn-group{
+  width: 100%;
+}
+.download-buttons-wrapper{
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1em;
+}
+.download-buttons-small{
+  .download-buttons-wrapper{
+    grid-column-gap: 2em;
+    padding: 1em;
+  }
+}
+.other-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1em;
+  .row{
+    margin: .5em 0;
+  }
+}
+.different {
+  padding: 0 .5em;
+}
+.search-buttons{
+  display: flex;
+}

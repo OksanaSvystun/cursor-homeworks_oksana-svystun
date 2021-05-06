@@ -1,0 +1,160 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn__small {
+  font-size: 0.9em;
+}
+
+.other-buttons .icon__small {
+  width: 1em;
+  height: 1em;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+}
+.search .little {
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search .big {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0 2px;
+  transition: 0.3s;
+  fill: #fff;
+  stroke: #fff;
+}
+.icon__small {
+  width: 1.2em;
+  height: 1.2em;
+}
+.icon__smallest {
+  width: 0.5em;
+  height: 0.6em;
+  margin-left: 0.5em;
+  margin-top: 0.2em;
+}
+
+.btn-primary,
+.btn-danger,
+.btn-success {
+  color: #fff;
+}
+.btn-primary .icon,
+.btn-danger .icon,
+.btn-success .icon {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.btn-light {
+  color: #878787;
+}
+.btn-light:hover .icon {
+  fill: #2C2C2C;
+  stroke: #2C2C2C;
+}
+.btn-light .icon {
+  fill: #878787;
+  stroke: #878787;
+}
+
+.btn-outline-secondary {
+  color: #2C2C2C;
+}
+.btn-outline-secondary:hover .icon {
+  fill: #fff;
+  stroke: #fff;
+}
+.btn-outline-secondary .icon {
+  fill: #2C2C2C;
+  stroke: #2C2C2C;
+}
+
+.btn-outline-primary {
+  color: #18A0FB;
+}
+.btn-outline-primary:hover .icon {
+  fill: #fff;
+  stroke: #fff;
+}
+.btn-outline-primary .icon {
+  fill: #18A0FB;
+  stroke: #18A0FB;
+}
+
+.tags-wrapper .btn {
+  padding: 0.2em 1em;
+}
+.tags-wrapper .btn-light {
+  color: #2C2C2C;
+  border: 1px solid #d5d5d5;
+}
+
+.container-xl {
+  margin: 1vw 0;
+}
+
+.buttons-container {
+  margin: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags-wrapper {
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-group {
+  width: 100%;
+}
+
+.download-buttons-wrapper {
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1em;
+}
+
+.download-buttons-small .download-buttons-wrapper {
+  grid-column-gap: 2em;
+  padding: 1em;
+}
+
+.other-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1em;
+}
+.other-buttons .row {
+  margin: 0.5em 0;
+}
+
+.different {
+  padding: 0 0.5em;
+}
+
+.search-buttons {
+  display: flex;
+}
