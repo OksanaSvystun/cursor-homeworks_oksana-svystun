@@ -5,13 +5,15 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' integrity='sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l' crossorigin='anonymous')
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap' rel='stylesheet')
     link(rel="stylesheet", href="./css/styles.css")
     title HW#12 BEM
   body 
     .container-xl 
       .row.buttons-container 
         .col-12
-          h1.title Button Big
+          h1.title Buttons Big
         .col-7.download-buttons-big 
           include layouts/buttons-download-big.pug
         .col-5.other-buttons
@@ -20,7 +22,7 @@ html(lang="en")
           include layouts/size-pannel-big.pug
       .row.buttons-container 
         .col-12
-          h1.title Button Small
+          h1.title Buttons Small
         .col-7.download-buttons-small 
           include layouts/buttons-download-small.pug
         .col-5.other-buttons

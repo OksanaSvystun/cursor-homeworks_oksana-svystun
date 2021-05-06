@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
 }
 .btn__small {
   font-size: 0.9em;
@@ -108,8 +109,16 @@
   border: 1px solid #d5d5d5;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .container-xl {
   margin: 1vw 0;
+}
+
+.title {
+  font-weight: 600;
 }
 
 .buttons-container {
