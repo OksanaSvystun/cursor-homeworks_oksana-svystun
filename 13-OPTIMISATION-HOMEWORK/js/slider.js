@@ -9,7 +9,7 @@ $(document).ready(function () {
     autoplayTimeout: 4000,
     items: 1,
     nav: true,
-    navText: ["<img src='../img/arrow-left.png'>", "<img src='../img/arrow-right.png'>"],
+    navText: ["<img src='./img/arrow-left.png'>", "<img src='./img/arrow-right.png'>"],
     dots: false,
   });
 });
