@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="./css/screen.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/preloader.css" />
   </head>
   <body>
+    <div class="preloader" id="preloader">
+      <div class="loader">Loading...</div>
+    </div>
     <header>
       <div class="wrapper">
         <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo" />
@@ -166,7 +170,11 @@
           как работает <span class="yellow">видеопарктроник?</span>
         </h2>
         <div id="video">
-         <video src="./img/Rasmus_FaineMisto_2018.mp4" controls="" width="100%"></video>
+          <video
+            src="./img/Rasmus_FaineMisto_2018.mp4"
+            controls=""
+            width="100%"
+          ></video>
         </div>
       </div>
     </section>
@@ -347,5 +355,7 @@
     <footer>
       <div class="wrapper"></div>
     </footer>
+
+    <script src="./js/preloader.js"></script>
   </body>
 </html>
