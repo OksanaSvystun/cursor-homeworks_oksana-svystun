@@ -73,7 +73,7 @@ header .phone {
 }
 
 .price {
-    background-image: url("../img/price-bg.webp");
+    background-image: url("../img/price-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 120px;
@@ -468,7 +468,7 @@ button {
     display: block;
     text-align: right;
     margin: 10px 0 auto 0;
-    vertical-align: top;
+    /* vertical-align: top; */
     padding-top: 15px;
 }
 

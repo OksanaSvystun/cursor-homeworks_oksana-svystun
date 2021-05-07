@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
-    <link rel="stylesheet" href="css/screen.css" />
-    <link rel="preload" href="css/fonts.css" as="font"/>
-    <link rel="stylesheet" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoShop</title>
+    <link rel="preload" href="./css/fonts.css" as="font" />
+    <link rel="stylesheet" href="./css/screen.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header>
@@ -32,7 +34,7 @@
           <button class="btn-order">Заказать</button>
         </div>
         <div class="right-block">
-          <img src="img/product1.webp" alt="product" class="main-image" />
+          <img src="img/product1.webp" alt="" class="main-image" />
           <div class="price">
             <div class="old-price">6999 грн.</div>
             <div class="new-price">3999 грн.</div>
@@ -61,7 +63,7 @@
             <p class="value">648х488</p>
           </div>
           <div class="description">
-            <img src="img/about-1.webp" alt="about" />
+            <img src="img/about-1.webp" alt="product" />
           </div>
         </div>
         <div class="column-block">
@@ -82,7 +84,7 @@
             <p class="value">черный, серый</p>
           </div>
           <div class="description">
-            <img src="img/about-2.webp" alt="about" />
+            <img src="img/about-2.webp" alt="product" />
           </div>
         </div>
         <div class="column-block last">
@@ -97,7 +99,7 @@
             </p>
           </div>
           <div class="description">
-            <img src="img/about-3.webp" alt="about" />
+            <img src="img/about-3.webp" alt="product" />
           </div>
         </div>
         <button class="btn-order centred">Заказать</button>
@@ -163,9 +165,7 @@
         <h2 class="h2">
           как работает <span class="yellow">видеопарктроник?</span>
         </h2>
-        <div id="video">
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M7lc1UVf-VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <div id="video"></div>
       </div>
     </section>
     <section class="how">
@@ -174,20 +174,32 @@
         <div class="left-block">
           <p>ремонт бампера стоит от</p>
           <p class="cost"><span class="yellow">6000</span> рублей</p>
-          <img src="img/girl-in-car.webp" alt="girl-in-car" class="full-width" />
-          <img src="img/broken-car1.webp" alt="broken-car" class="half-width" />
-          <img src="img/broken-car2.webp" alt="broken-car" class="half-width" />
+          <img
+            src="./img/girl-in-car.webp"
+            alt="girl-in-car"
+            class="full-width"
+          />
+          <img
+            src="./img/broken-car1.webp"
+            alt="broken-car"
+            class="half-width"
+          />
+          <img
+            src="./img/broken-car2.webp"
+            alt="broken-car"
+            class="half-width"
+          />
         </div>
         <div class="right-block">
           <p>Видеопарктроник с подарком стоит</p>
           <p class="cost"><span class="yellow">3990</span> рублей</p>
           <img
-            src="img/product.webp"
+            src="./img/product.webp"
             alt="product"
             class="full-width small-height-fix"
           />
           <span class="plus yellow">+</span>
-          <img src="img/gift.webp" alt="gift" class="full-width" />
+          <img src="./img/gift.webp" alt="gift" class="full-width" />
         </div>
         <button class="btn-order centred">Заказать</button>
       </div>
@@ -199,11 +211,11 @@
         </h2>
         <!-- <img src="img/arrow-left.png" alt="" class="arrow-left" /> -->
         <svg class="icon arrow-left" width="30px">
-  <use xlink:href="./img/icons.svg#arrow-left"></use>
-</svg>
+          <use xlink:href="./img/icons.svg#arrow-left"></use>
+        </svg>
         <div class="review-slider">
           <div class="slide">
-            <img src="img/review1.webp" alt="review" class="main-review-img" />
+            <img src="./img/review1.webp" alt="car" class="main-review-img" />
             <p class="review-text">
               Опять долгие ночи в интернете в поисках обзоров и сравнений…
               Проблема таких устройств что у них либо дизайн уродский огромный —
@@ -218,7 +230,7 @@
               зеркало любой машины, вообщем то что доктор прописал!
             </p>
             <div class="review-author">
-              <img src="img/review1-ava.webp" alt="review" class="ava" /><b
+              <img src="./img/review-ava1.webp" alt="avatar" class="ava" /><b
                 >Константин</b
               ><i>г. Днепропетровск</i>
             </div>
@@ -226,8 +238,8 @@
         </div>
         <!-- <img src="img/arrow-right.png" alt="" class="arrow-right" /> -->
         <svg class="icon arrow-right" width="30px">
-  <use xlink:href="./img/icons.svg#arrow-right"></use>
-</svg>
+          <use xlink:href="./img/icons.svg#arrow-right"></use>
+        </svg>
       </div>
     </section>
     <section class="delivery">
@@ -251,13 +263,13 @@
             <div class="adv-title yellow">Оплата при получении</div>
           </div>
           <div class="adv">
-            <svg class="icon"  width="60px">
+            <svg class="icon" width="60px">
               <use xlink:href="./img/icons.svg#adv2"></use>
             </svg>
             <div class="adv-title yellow">365 дней гарантии</div>
           </div>
           <div class="adv">
-            <svg class="icon"  width="60px">
+            <svg class="icon" width="60px">
               <use xlink:href="./img/icons.svg#adv3"></use>
             </svg>
             <div class="adv-title yellow">Возврат денег в течение 14 дней</div>
@@ -302,9 +314,9 @@
           <span class="yellow">получите в подарок</span> антибликовое стекло
         </h2>
         <div class="left-block">
-          <img src="img/product-reverse.webp" alt="product" />
+          <img src="./img/product-reverse.webp" alt="product" />
           <span class="plus">+</span>
-          <img src="img/gift-reverse.webp" alt="gift" />
+          <img src="./img/gift-reverse.webp" alt="gift" />
           <div class="price">
             <div class="old-price">6999 грн.</div>
             <div class="new-price">3999 грн.</div>
