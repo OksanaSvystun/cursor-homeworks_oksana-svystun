@@ -5,7 +5,7 @@ let secondNumberInt;
 
 // Checks or input is an integer and a number function
 function integer(number) {
-  if (Number.isInteger(Number(number)) && Number(number)) {
+  if ((Number.isInteger(Number(number)) && Number(number)) || Number(number)==0) {
     return true;
   } else {
     return false;
@@ -16,7 +16,7 @@ function integer(number) {
 do {
   firstNumber = +prompt("Enter first (integer) number.");
   firstNumberInt = integer(firstNumber);
-} while (!firstNumberInt === true);
+} while (!firstNumberInt === true );
 
 // Do prompt while function isn't true and firstNumber!= secondNumber
 do {
@@ -34,6 +34,7 @@ if (includeEven) {
     for (let i = minNumber; i <= maxNumber; i++) {
       if (i % 2 != 0) {
         sum += i;
+        console.log(sum)
       }
     }
   } else {
