@@ -14,12 +14,19 @@ document.forms.digit_form.onsubmit = function (event) {
 };
 
 
-// Створити функцію, яка визначає ступінь числа. Не використовуючи Math.pow та **. Використовуйте цикл
+// Створити функцію, яка визначає степінь числа. Не використовуючи Math.pow та **. Використовуйте цикл
 
 function degreeOfNumber(number, degree) {
   let result = 1;
-  for (let i = 0; i <= degree; i++){
-    result = result * number;
+  if (degree > 0) {
+    for (let i = 1; i <= degree; i++){
+      result = result * number;
+    }
+  }
+  else {
+    for (let i = -1; i >= degree; i--){
+      result = result / number;
+    }
   }
   return result;
 };
