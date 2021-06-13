@@ -107,3 +107,89 @@ document.forms.letter_form.onsubmit = function (event) {
   ).innerHTML = `Літера '${letterFromUser}' повторюється 
   ${letterCalc(wordFromUser, letterFromUser)} разів`;
 };
+
+// Створіть функцію, яка конвертує долари в гривні та навпаки в залежності від наявності символа $ або UAH в рядку
+function currencyConv(currency) {
+  let convValue = 25;
+  let currencyNum;
+  let convertedNum;
+  if (currency.indexOf("UAH") !== -1 || currency.indexOf("uah") !== -1) {
+    currencyNum = currency.substring(0, currency.length - 3);
+    convertedNum = currencyNum / convValue;
+  }
+  else if (currency.indexOf("$") !== -1) {
+    currencyNum = currency.substring(0, currency.length - 1);
+    convertedNum = currencyNum / convValue;
+  }
+  else {
+    convertedNum = "Будь ласка, вкажіть правильну валюту";
+  }
+  return convertedNum;
+};
+document.forms.currency_form.onsubmit = function (event) {
+  event.preventDefault();
+  let currencyFromUser = document.getElementById("currency").value;
+  document.getElementById("currency-conversion").innerHTML =
+    "Конвертовано: " + currencyConv(currencyFromUser);
+};
+
+// Створіть функцію генерації випадкового паролю (тільки числа), довжина встановлюється користувачем або по замовчуванню = 8 символам. 
+function generatePassword(length) {
+  let password;
+  if (length == '') {
+    password = Math.floor(Math.random() * 100000000);
+  }
+  else {
+    let cache = 1;
+    for (let i = 1; i <= length; i++){
+      cache = cache * 10;
+    }
+    password = Math.floor(Math.random() * cache);
+  }
+  return password;
+};
+document.forms.password_form.onsubmit = function (event) {
+  event.preventDefault();
+  let passwordLenghtFromUser = document.getElementById("password").value;
+  document.getElementById("password-lenght").innerHTML =
+    "Пароль: " + generatePassword(passwordLenghtFromUser);
+};
+
+// Створіть функцію, яка видаляє всі букви з речення.
+function removeLetter(sentence, letter) {
+  let newSentence = '';
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] == letter.toUpperCase() || sentence[i] == letter.toLowerCase()) {
+      continue;
+    }
+    else {
+      newSentence = newSentence + sentence[i];
+    }    
+  }
+  return newSentence;
+};
+document.forms.remove_form.onsubmit = function (event) {
+  event.preventDefault();
+  let sentenceFromUser = document.getElementById("sentence").value;
+  let letterToRemoveFromUser = document.getElementById("letter-remove").value;
+  document.getElementById("remove-letter-sentence").innerHTML =
+    `Речення без літери ${letterToRemoveFromUser}: ` +
+    removeLetter(sentenceFromUser, letterToRemoveFromUser);
+};
+
+// Створіть функцію, яка перевіряє, чи є слово паліндромом.
+function isPalindrom(phrase) {
+  let newPhrase = phrase.toLowerCase().replace(/\s/g, "");
+  let reversePhrase = newPhrase.split("").reverse().join("");
+  if (newPhrase === reversePhrase) {
+    return true;
+  }
+  else
+    return false;
+};
+document.forms.palindrom_form.onsubmit = function (event) {
+  event.preventDefault();
+  let phraseFromUser = document.getElementById("phrase").value;
+  document.getElementById("is-palindrom").innerHTML =
+    `Речення паліндром? ` + isPalindrom(phraseFromUser);
+};

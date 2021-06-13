@@ -84,6 +84,53 @@
       <span id="number-of-letters"></span>
     </form>
   </div>
+  <br>
+  <div class="function-container">
+    <h3>Обрахунок валюти</h3>
+    <form name="currency_form">
+      <label for="currency">Введіть значення</label>
+      <input type="text" name="currency" id="currency">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="currency-conversion"></span>
+    </form>
+  </div>
+  <br>
+  <div class="function-container">
+    <h3>Генерація паролю</h3>
+    <form name="password_form">
+      <label for="password">Введіть довжину паролю</label>
+      <input type="number" value="8" min="5" name="password" id="password">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="password-lenght"></span>
+    </form>
+  </div>
+   <br>
+  <div class="function-container">
+    <h3>Видалення літери з речення.</h3>
+    <form name="remove_form">
+      <label for="sentence">Введіть речення</label>
+      <input type="text" name="sentence" id="sentence">
+      <br><br>
+      <label for="letter-remove">Введіть літеру</label>
+      <input type="text" maxlength="1" name="letter-remove" id="letter-remove">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="remove-letter-sentence"></span>
+    </form>
+  </div>
+  <br>
+  <div class="function-container">
+    <h3>Визначення паліндрому</h3>
+    <form name="palindrom_form">
+      <label for="phrase">Введіть речення</label>
+      <input type="text" name="phrase" id="phrase">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="is-palindrom"></span>
+    </form>
+  </div>
   <script src="./index.js"></script>
 </body>
 </html>
