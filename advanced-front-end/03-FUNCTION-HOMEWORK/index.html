@@ -7,6 +7,83 @@
   <title>HW #3 Function</title>
 </head>
 <body>
+  <div class="function-container">
+    <h3>Визначення найбільшої цифри у числі</h3>
+    <form name="digit_form">
+      <label for="digit">Введіть число</label>
+      <input type="number" name="digit" id="input-max-digit">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="max-number"></span>
+    </form>
+  </div>
+  <br>
+  <div class="function-container">
+    <h3>Визначення степені числа</h3>
+    <form name="degree_form">
+      <label for="number-degree">Введіть число</label>
+      <input type="number" name="number-degree" id="input-number-degree">
+      <br><br>
+      <label for="degree">Введіть степінь</label>
+      <input type="number" name="degree" id="degree">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="number-in-degree"></span>
+    </form>
+  </div>
+  <br>
+  <div class="function-container">
+    <h3>Коніертація імені в стандартний вигляд</h3>
+    <form name="upperCase_form">
+      <label for="name">Введіть ім'я</label>
+      <input type="text" name="name" id="name">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="first-letter-upperCase"></span>
+    </form>
+  </div>
+  <br>
+  <div class="function-container">
+    <h3>Сума зарплатні після оплати податку</h3>
+    <form name="tax_form">
+      <label for="salary">Введіть вашу зарплатню</label>
+      <input type="number" name="salary" id="salary">
+      <br><br>
+      <label for="tax">Введіть податок %</label>
+      <input type="number" name="tax" id="tax">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="salary-without-tax"></span>
+    </form>
+  </div>
+  <br>
+  <div class="function-container">
+    <h3>Випадкове число в діапазоні від N до M</h3>
+    <form name="rand_form">
+      <label for="number1">Введіть перше число</label>
+      <input type="number" name="number1" id="number1">
+      <br><br>
+      <label for="number2">Введіть друге число</label>
+      <input type="number" name="number2" id="number2">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="random-number"></span>
+    </form>
+  </div>
+  <br>
+  <div class="function-container">
+    <h3>Кількість повторів літери у слові.</h3>
+    <form name="letter_form">
+      <label for="word">Введіть слово</label>
+      <input type="text" name="word" id="word">
+      <br><br>
+      <label for="letter">Введіть літеру</label>
+      <input type="text" name="letter" id="letter">
+      <br><br>
+      <input type="submit" value="Визначити">
+      <span id="number-of-letters"></span>
+    </form>
+  </div>
   <script src="./index.js"></script>
 </body>
 </html>
