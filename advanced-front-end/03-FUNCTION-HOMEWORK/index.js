@@ -119,7 +119,7 @@ function currencyConv(currency) {
   }
   else if (currency.indexOf("$") !== -1) {
     currencyNum = currency.substring(0, currency.length - 1);
-    convertedNum = currencyNum / convValue;
+    convertedNum = currencyNum * convValue;
   }
   else {
     convertedNum = "Будь ласка, вкажіть правильну валюту";
