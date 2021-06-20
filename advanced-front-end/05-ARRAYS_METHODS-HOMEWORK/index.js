@@ -8,22 +8,6 @@ function getRandomArray(lenght, min, max) {
 };
 document.getElementById("random-array").innerHTML = `Your array is: ${getRandomArray(10, 1, 20)}`;
 
-
-// Створіть функцію getModa(...numbers) – яка вираховує моду всіх переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ
-// function getModa(...numbers) {
-//   const filteredArr = numbers.sort((a, b) => {
-//     return a - b;
-//   });
-//   let indexArr = [];
-//   // for (let i = 0; i < numbers.length; i+numbers.lastIndexOf(numbers[i])){
-//   //   indexArr.push(numbers.lastIndexOf(numbers[i]) - numbers.indexOf(numbers[i]));
-//   // }
-
-// }
-// getModa(5, 5, 15, 10, 1.8, 25, 1.5, 30);
-
-
-
 // Створіть функцію getAverage(...numbers) – яка рахує середнє арифметичне всіх переданих в неї аргументів. НЕЦІЛІ ЧИСЛА ІГНОРУЮТЬСЯ
 function getAverage(...numbers) {
   let sum = 0;
@@ -94,7 +78,7 @@ function getDividedByFive(...numbers) {
 }
 document.getElementById("filter-divide-five").innerHTML = getDividedByFive(1, 5, 25, 8, 20, 3, 75, 7);
 
-// Створіть функцію replaceBadWords(string) – яка 1) розіб'є фразу на слова, 2) замінить погані слова на зірочки (*). При вирішенні цього завдання необхідно розбити масив на слова за допомогою функції .split(" "), після чого масив необхідно буде склеїти .join(" ") Погані слова: shit та fuck. Передбачте можливість розширювати список цих слів у майбутньому
+// Створіть функцію  – яка 1) розіб'є фразу на слова, 2) замінить погані слова на зірочки (*). При вирішенні цього завдання необхідно розбити масив на слова за допомогою функції .split(" "), після чого масив необхідно буде склеїти .join(" ") Погані слова: shit та fuck. Передбачте можливість розширювати список цих слів у майбутньому
 function replaceBadWords(string) {
   let badWordsArray = ['shit', 'fuck'];
   let arr = string.split(' ');
@@ -116,13 +100,17 @@ function replaceBadWords(string) {
     }
   }
   
-  return `Censored phrase: ${arr.join(" ")}`;
+  return `<br>Censored phrase: ${arr.join(" ")}`;
 }
-document.forms.badWords_form.onsubmit = function (event) {
-  event.preventDefault();
-  let phraseFromUser = document.getElementById("bad-words").value;
-  document.getElementById("censored").innerHTML =
-  replaceBadWords(phraseFromUser);
-};
+
 
 // Створіть функцію divideByThree(word), яка розбиває кожне слово на умовні склади по 3 букви. Якщо букв менше трьох – не розбиває. Пробіли завжди видаляються. Рядок приводится до нижнього регістру. 
+function divideByThree(word) {
+  // const dividedWords = [];
+  // let newWord = word.replaceAll(' ', '').toLowerCase();
+  // for (var i = 0; i < newWord.length; i += 3) {
+  //   dividedWords.push(newWord.substring(i, i + 3));
+  // }
+  return word.replaceAll(' ', '').toLowerCase().match((/[\s\S]{1,3}/g) || []).join(', ');
+};
+
