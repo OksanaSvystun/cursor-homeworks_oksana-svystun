@@ -70,6 +70,10 @@ function currencyConv(currency) {
     currencyNum = currency.substring(0, currency.length - 1);
     convertedNum = currencyNum * convValue;
   }
+  else if (currency.indexOf("USD") !== -1) {
+    currencyNum = currency.substring(0, currency.length - 3);
+    convertedNum = currencyNum * convValue;
+  }
   else {
     convertedNum = "Будь ласка, вкажіть правильну валюту";
   }
