@@ -3,7 +3,9 @@ document.getElementById("subjects").innerHTML = getSubjects(students[0]);
 // getAverageMark
 document.getElementById('average').innerHTML = `Середня оцінка з усіх предметів: ${getAverageMark(students[0])}`;
 // getStudentInfo
-document.getElementById('info').innerHTML = `Інформація про студента: <br> ${getStudentInfo(students[0])}`
+document.getElementById('info').innerHTML = `Інформація про студента: <br> ${getStudentInfo(students[0])}`;
+// getStudentsNames;
+document.getElementById('names').innerHTML = `Cтуденти в алфавітному порядку: ${getStudentsNames(students)}`;
 // getBestStudent
 document.getElementById("best").innerHTML =  `Кращий студент: ${getBestStudent(students)}`;
 // calculateWordLetters

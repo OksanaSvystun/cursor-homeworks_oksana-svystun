@@ -29,7 +29,7 @@ function getStudentInfo(student) {
 
 
 // Ствроіть функцію getStudentsNames(students) --> ["Anton", "Tanya, "Victor"] – яка повертає імена студентів у алфавітному порядку. 
-const getStudentsNames = (students) => students.map(student => student.name).sort();
+const getStudentsNames = (students) => students.map(student => student.name).sort().join(', ');
 
 // Створіть функцію getBestStudent(students) --> "Anton" – яка повертає кращого студента зі списку по показнику середньої оцінки. 
 function getBestStudent(students) {
