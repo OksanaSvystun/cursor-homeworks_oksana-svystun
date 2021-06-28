@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW#7 Closures, 'this' keyword</title>
+</head>
+<body>
+  <div class="function-container">
+    <h3>Обрахунок податків</h3>
+    <form name="tax_form">
+      <select name="country" id="country-1">
+        <option value disabled selected>Оберіть країну</option>
+        <option value="ukraine">Україна</option>
+        <option value="latvia">Латвія</option>
+        <option value="litva">Литва</option>
+      </select>
+      <br><br>
+      <label for="salary">Введіть зарплатню</label>
+      <br>
+      <input type="number" name="salary" id="salary-1">
+      <br><br>
+      <input type="submit" value="Обрахувати">
+      <span id="tax"></span>
+    </form>
+  </div>
+
+  <div class="function-container">
+    <h3>Середній податок по країні</h3>
+    <form name="average_tax_form">
+      <select name="country" id="country-2">
+        <option value disabled selected>Оберіть країну</option>
+        <option value="ukraine">Україна</option>
+        <option value="latvia">Латвія</option>
+        <option value="litva">Литва</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Обрахувати">
+      <span id="average-tax"></span>
+    </form>
+  </div>
+
+  <div class="function-container">
+    <h3>Сума податків у країні</h3>
+    <form name="all_tax_form">
+      <select name="country" id="country-3">
+        <option value disabled selected>Оберіть країну</option>
+        <option value="ukraine">Україна</option>
+        <option value="latvia">Латвія</option>
+        <option value="litva">Литва</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Обрахувати">
+      <span id="all-tax"></span>
+    </form>
+  </div>
+
+  <div class="function-container">
+    <h3>Податкова інформація країни</h3>
+    <form name="tax_info_form">
+      <select name="country" id="country-4">
+        <option value disabled selected>Оберіть країну</option>
+        <option value="ukraine">Україна</option>
+        <option value="latvia">Латвія</option>
+        <option value="litva">Литва</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Вивести">
+      <span id="tax-info"></span>
+    </form>
+  </div>
+
+
+
+
+  <script src="./js/data.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/view.js"></script>
+</body>
+</html>
