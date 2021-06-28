@@ -1,7 +1,7 @@
 function stringToObject(country) {
   if (country == "ukraine") return ukraine;
   if (country == "latvia") return latvia;
-  if (country == "latvia") return latvia;
+  if (country == "litva") return litva;
 }
 
 document.forms.tax_form.onsubmit = function (event) {
@@ -33,7 +33,7 @@ document.forms.all_tax_form.onsubmit = function (event) {
 document.forms.tax_info_form.onsubmit = function (event) {
   event.preventDefault();
   const countryFromUser = document.getElementById("country-4").value;
-  document.getElementById("tax-info").innerHTML = 'Перевірте консоль'
+  document.getElementById("tax-info").innerHTML = 'Перевірте консоль, вивід що 10 секунд'
   console.log(getMySalary(
    stringToObject(countryFromUser)
  ))

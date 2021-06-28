@@ -21,15 +21,7 @@ function getMySalary(country) {
     const profit = +(salary - taxes).toFixed(2);
     // console.log({ salary, taxes, profit });
     return console.log({ salary, taxes, profit });
-  }, 1000);
-}
-// console.log(getMySalary(ukraine));
-function gms(c) {
-  const salary = Math.floor(Math.random() * 2001) + 1500;
-  const taxes = +getMyTaxes.call(country, salary).toFixed(2);
-  const profit = +(salary - taxes).toFixed(2);
-  // console.log({ salary, taxes, profit });
-  return { salary, taxes, profit };
+  }, 10000);
 }
 
 // function empty(input) {
