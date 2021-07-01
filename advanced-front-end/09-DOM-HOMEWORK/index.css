@@ -1,0 +1,21 @@
+body{
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* cursor: pointer; */
+}
+.canvas-wrapper{
+  margin-top: 30px;
+  cursor: pointer;
+}
+.none-cursor{
+  pointer-events: none;
+}
