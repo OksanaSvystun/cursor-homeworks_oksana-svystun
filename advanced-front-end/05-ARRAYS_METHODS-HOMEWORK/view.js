@@ -2,8 +2,9 @@
 document.forms.badWords_form.onsubmit = function (event) {
   event.preventDefault();
   let phraseFromUser = document.getElementById("bad-words").value;
-  document.getElementById("censored").innerHTML =
-    replaceBadWords(phraseFromUser);
+  document.getElementById(
+    "censored"
+  ).innerHTML = `<br>Censored phrase: ${replaceBadWords(phraseFromUser)}`;
 };
 
 // divideByThree(word);
