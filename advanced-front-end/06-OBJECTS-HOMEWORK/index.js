@@ -1,9 +1,9 @@
 // Створіть функцію getSubjects(students[0] --> ["Math", "Algorithms", "Data science"] - яка повертає список предметів для конкретного студента. Зверніть увагу – назву предмету необхідно повертати з великої літери, а _ – замінити на пробіл 
 function getSubjects(student) {
-  const studentSubjects = Object.keys(student.subjects).map(item => {
+  return Object.keys(student.subjects).map(item => {
     return item[0].toUpperCase() + item.slice(1);
   });
-  return `Список предметів для студента ${student.name} <br> ${studentSubjects.join(', ').replaceAll('_', ' ')}`;
+  // return studentSubjects;
 };
 
 
@@ -24,12 +24,12 @@ function getStudentInfo(student) {
   const { name, course} = student;
   const studentInfo = { name, course };
   studentInfo.averageMark = getAverageMark(student);
-  return Object.entries(studentInfo).join(" || ");
+  return Object.entries(studentInfo);
 };
 
 
 // Ствроіть функцію getStudentsNames(students) --> ["Anton", "Tanya, "Victor"] – яка повертає імена студентів у алфавітному порядку. 
-const getStudentsNames = (students) => students.map(student => student.name).sort().join(', ');
+const getStudentsNames = (students) => students.map(student => student.name).sort();
 
 // Створіть функцію getBestStudent(students) --> "Anton" – яка повертає кращого студента зі списку по показнику середньої оцінки. 
 function getBestStudent(students) {
@@ -53,5 +53,5 @@ function calculateWordLetters(userPhrase) {
     counter[word[i]] ? (counter[word[i]] += 1) : (counter[word[i]] = 1);
   }
   console.log(counter);
-  return Object.entries(counter).join(' || ');
+  return Object.entries(counter);
 };
