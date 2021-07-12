@@ -1,0 +1,38 @@
+body{
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./the-road-through-the-woods-1449194.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: monospace;
+}
+.container{
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  border-radius: 5%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+button:hover{
+  background: rgba(0, 173, 14, 0.3);
+  transition: 0.3s;
+}
