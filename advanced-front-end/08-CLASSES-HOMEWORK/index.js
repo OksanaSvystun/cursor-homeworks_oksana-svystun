@@ -14,14 +14,17 @@ class Student {
   get getMarks() {
     if (this.status === "виключено") {
       console.log(`Студента ${this.fullName} виключено`);
+      return this.status;
     } else {
       console.log(`Усі оцінки студента ${this.fullName}: ${this.marks}`);
+      return this.marks;
     }
   }
 
   set setMarks(mark) {
     if (this.status == "виключено") {
       console.log(`Студента ${this.fullName} виключено`);
+      return this.status;
     } else {
       console.log('Додано оцінку', mark);
       return this.marks.push(mark);
@@ -40,12 +43,13 @@ class Student {
     }
     else {
       console.log(`Студента ${this.fullName} виключено`);
+      return this.status;
       } 
     }
 
   dismiss() {
     this.status = "виключено";
-    console.log(`Статус студента ${this.fullName} - ${this.status}`);;
+    console.log(`Статус студента ${this.fullName} - ${this.status}`);
   }
 
   recover() {
@@ -83,12 +87,15 @@ class BudgetStudent extends Student {
   getScholarship() {
     if (super.getAverageMark() >= 4 && this.superStatus === 'бютжет') {
       console.log(`Ви, ${this.fullName}, отримали ${(this.scholarship)} грн. стипендії`);
+      return this.scholarship;
     }
     else if (this.status != "студент") {
       console.log(`Студента ${this.fullName} не існує`);
+      return this.status;
     }
     else {
       console.log(`Середній бал студента ${this.fullName} занизький для отримання стипендії`);
+      return super.getAverageMark() >= 4;
     }
   }
 }
