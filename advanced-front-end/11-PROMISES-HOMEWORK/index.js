@@ -10,7 +10,7 @@ async function getRandomChinese(lenght) {
         i++;
       }, 50);
     });
-    chineseeString = chineseeString + (await chineseeSymbol);
+    chineseeString += await chineseeSymbol;
   }
   return chineseeString;
 }
