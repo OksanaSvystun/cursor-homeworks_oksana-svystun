@@ -1,5 +1,4 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+const blockContainer = document.getElementById("block-container");
 
 function randRGB() {
   const r = Math.random() * (255 - 0) + 0;
@@ -9,17 +8,22 @@ function randRGB() {
 }
 
 function generateBlocks() {
-  for (let x = 0; x < canvas.clientWidth; x = x + canvas.clientWidth / 5) {
-    for (let y = 0; y < canvas.clientHeight; y = y + canvas.clientHeight / 5) {
-      ctx.fillRect(x, y, canvas.clientWidth / 5, canvas.clientHeight / 5);
-      ctx.fillStyle = randRGB();
-    }
+  for (let i = 0; i < 25; i++) {
+    const cell = document.createElement("div");
+    cell.classList.add("cell");
+    blockContainer.appendChild(cell).style.backgroundColor = randRGB();
   }
 }
 generateBlocks();
 
 function generateBlocksInterval() {
-  setInterval(() => generateBlocks(), 1000);
-  canvas.classList.toggle("none-cursor");
+  const changeColorElement = document.querySelectorAll(".cell");
+  setInterval(() => {
+    changeColorElement.forEach((square) => {
+      square.style.backgroundColor = randRGB();
+    });
+  }, 1000);
+  blockContainer.classList.toggle("none-cursor");
 }
-canvas.onclick = generateBlocksInterval;
+
+blockContainer.onclick = generateBlocksInterval;
